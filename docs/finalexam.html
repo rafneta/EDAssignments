@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Rafael Martínez Martínez" />
+
+
+<title>Final Exam</title>
+
+<script src="site_libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="site_libs/jquery-3.5.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<script src="site_libs/navigation-1.1/sourceembed.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="site_libs/htmlwidgets-1.5.3.9000/htmlwidgets.js"></script>
+<script src="site_libs/proj4js-2.3.15/proj4.js"></script>
+<link href="site_libs/highcharts-8.1.2/css/motion.css" rel="stylesheet" />
+<script src="site_libs/highcharts-8.1.2/highcharts.js"></script>
+<script src="site_libs/highcharts-8.1.2/highcharts-3d.js"></script>
+<script src="site_libs/highcharts-8.1.2/highcharts-more.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/stock.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/map.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/annotations.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/data.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/drilldown.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/item-series.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/offline-exporting.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/overlapping-datalabels.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/exporting.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/export-data.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/funnel.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/heatmap.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/treemap.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/sankey.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/dependency-wheel.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/organization.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/solid-gauge.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/streamgraph.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/sunburst.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/vector.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/wordcloud.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/xrange.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/tilemap.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/venn.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/gantt.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/timeline.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/parallel-coordinates.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/bullet.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/coloraxis.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/dumbbell.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/lollipop.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/series-label.js"></script>
+<script src="site_libs/highcharts-8.1.2/plugins/motion.js"></script>
+<script src="site_libs/highcharts-8.1.2/custom/reset.js"></script>
+<script src="site_libs/highcharts-8.1.2/modules/boost.js"></script>
+<script src="site_libs/highchart-binding-0.8.2/highchart.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+#rmd-source-code {
+  display: none;
+}
+</style>
+
+<link rel="stylesheet" href="estilo.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Assignments: Economia del Desarrollo</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="Assignment1.html">Assignment 1</a>
+</li>
+<li>
+  <a href="finalexam.html">Final home exam</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+<div class="btn-group pull-right">
+<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+<li role="separator" class="divider"></li>
+<li><a id="rmd-download-source" href="#">Download Rmd</a></li>
+</ul>
+</div>
+
+
+
+<h1 class="title toc-ignore">Final Exam</h1>
+<h4 class="author">Rafael Martínez Martínez</h4>
+
+</div>
+
+
+<div id="q1" class="section level1">
+<h1>Q1</h1>
+<div class="jumbotron">
+<div id="justificar">
+<p class="lead">
+Consider the following policy experiment. Nigeria decides to implement a program to encourage schooling of girls in the North Western region of the country starting theyear 1990. The government is now interested in understanding whether the program was successful in achieving its objective of increasing educational attainment of the girls. Please download the .csv file provided at the following link below on women outcomes from Nigeria. The data contains information on age, ethnicity, region of residence and educational attainment.
+</p>
+</div>
+</div>
+<div id="a" class="section level2">
+<h2>a)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+Please suggest an identification strategy to be able to evaluate the impact of the program based on the data provided; please clearly outline the groups you intend to compare; the identifying assumption, as well as the estimation equation. (8 points).
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>The appendix Q1 shows exploratory analysis of the variables and the corresponding codes, this is at the end of the document.</p>
+<p>Difference-in-differences (DiD) approaches are applied in situations when certain groups are exposed to a treatment and others are not, thus I use it.</p>
+<p>The identification assumption of the DiD approach is that the group-specific trends in the outcome of interest would be identical in the absence of treatment.</p>
+<p>It seems that women living in the north-west region have a lower level of education</p>
+<p><img src="Imagenes/esta.png" width="100%" /> The age to start education in Nigeria is 5 years [1]. So in 2013 all women living in the north-west region aged 28 and under were treated, and women over 28 were not treated. While women living in the other regions have never been treated. The estimation equation</p>
+<p><span class="math display">\[
+Y_{i}=\alpha+\lambda\beta_{t}+\gamma\beta_{r}+X_{i}^{\prime} \beta_{0}+\delta M_{i}+\varepsilon_{i}
+\]</span></p>
+<p><span class="math inline">\(Y_i\)</span> is the years of education, <span class="math inline">\(\beta_t\)</span>, is a dummy for age, <span class="math inline">\(\beta_r\)</span> is a dummy for region, <span class="math inline">\(X_i\)</span> are individual characteristics (like ethnicity), <span class="math inline">\(M_i\)</span> is a dummy variable that equals 1 if <span class="math inline">\(i\)</span> lives in the north-west region and if <span class="math inline">\(i\)</span> is under 28 years old. The estimation <span class="math inline">\(\hat\delta\)</span> is the causal effect of the program.</p>
+<p><img src="Imagenes/did.png" width="100%" /></p>
+</div>
+</div>
+<div id="b" class="section level2">
+<h2>b)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+Please using the .csv data check whether the identifying assumption suggested in(1) is satisfied. Note: the assumption to use the strategy suggested in (1) maynot be satisfied in the data and that is fine; I want you to only analyze whetherthe identifying assumption is satisfied or not and present the results. (8 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>The Figure shows that outcomes in the treatment and the control group prior to the treatment moved in parallel, which supports the assumption of parallel trends over the introduction of the treatment.</p>
+<p>The teatment just apply if the women are 28 or less years</p>
+<p><img src="Imagenes/tendencias.png" width="100%" /></p>
+</div>
+<p>Reference:</p>
+<p>[1] Sule, Itodo Daniel; Emmanuel, Hope Abah; Alabi, Christiana T.; Adebayo, Ismail; Eleweke, Titus; Imam, Abubakar; Bashir, Misbahu (24 June 2019). “Thousands of pupils skip primary 5 and 6 to JSS1”. Daily Trust. Daily Trust. Retrieved 30 May 2020.</p>
+<p>[2] <a href="https://mixtape.scunning.com/difference-in-differences.html" class="uri">https://mixtape.scunning.com/difference-in-differences.html</a></p>
+</div>
+</div>
+<div id="q2" class="section level1">
+<h1>Q2</h1>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+There has been a vibrant debate in the literature as to what explains the large differ-ences in cross-country per capita income levels.
+</p>
+</div>
+</div>
+<div id="a-1" class="section level2">
+<h2>a)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+In the view of Jared Diamond (1997) what are the “ultimate factors” underlying the divergence of countries across the globe? (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>It refers to the environmental conditions that foster the dissemination and inheritance of better conditions (plants, animals and the results of having it grown and domesticated, correspondingly). In Eurasia they have an east-west axis, while in America and Africa they have a north-south axis, with the latter kind of geographic distribution (the tropical rainforest in the case of America and the desert in the case of Africa) the dissemination and improvement of the conditions for that, in time, better outcomes in terms of technology (weapons, ships, better political organization, resistence to diseases, etc., i.e., proximate factors) could been attained were impossible.</p>
+</div>
+<p><img src="Imagenes/ejes.png" width="100%" /> Guns, Germs and Steel: The Fates of Human Societies. Jared Diamond. New York: W.W. Norton, 1997, 480 pp</p>
+</div>
+<div id="b-1" class="section level2">
+<h2>b)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+Do Acemoglu, Johnson and Robinson (2002) concur with the view of Diamond, in particular, what evidence do they bring to support or overturn the theory proposed by Diamond? (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>Acemoglu, Johnson and Robinson disagree with Diamond. For if is it true that economic development depends on geographic factors (there are simple and sophisticated versions of this hypothesis), country powers of the sixteenth century wouldn’t be relatively poor nowadays. In order to measure economic prosperity urbanization and population density patterns are used as proxies and with these results they show the negative relation between economic prosperity in the 1500s and the per capita income in these days among the former colonies. The creation of (good) institutions was the mechanism of change, due to the european colonization, because those institutions were precisely an enabling factor for a better industrialization.</p>
+</div>
+</div>
+<div id="c" class="section level2">
+<h2>c)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+The conclusions drawn by Acemoglu, Johnson and Robinson (2002), however, later work points out depends on whether we compare territories or populations. Explain by constructing a simple example. (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>If today county A population assume comprises of <span class="math inline">\(a\)</span> portion a from country X, <span class="math inline">\(b\)</span> from country Y, and <span class="math inline">\(c\)</span> from country Z, such that <span class="math inline">\(a+b+c=1\)</span>. The ancestry adjusted population density of 1500 is: <span class="math inline">\(a{*}\)</span> population density 1500 of X <span class="math inline">\(+b{*}\)</span> population density 1500 of Y <span class="math inline">\(+c{*}\)</span> population density 1500 of Z. It will be found that the reversal of fortunes hypothesis does not hold.</p>
+</div>
+</div>
+<div id="d" class="section level2">
+<h2>d)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+In light of the above draw your own assessment of factors underlying the differences in cross-country per capita income levels. (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>The factors underlying income differences among countries are: geography, institutions and those associated with human resources. Take geographic factors for instance, with the right geographic environment, population can have acces to production supply materials, good conditions for farming, and better conditions for the development of activities such as fishing, and animal breeding, etc. Even when they are very important, geographic factors are not determinant when we are trying to explain the differences in per capita income among different countries, since in countries where there is no geographic advantage there are institutions that foster investment and industrial development. In this cases, institutions are in charge of establishing commercial trades to satisfy the needs caused by such precarious geographic situation. A way to ponder such needs is to make collaboration agreements to attain human resources, taking in consideration the quantity and the quality of such labor power. An example of the latter is USA, where there is a massive migration with a high degree of specialization, as it can be observed in the academic, farming and services sectors. In summary, the differences in per capita incomes in different countries are closely related to the interactions between geography, institutions and human resources.</p>
+</div>
+</div>
+</div>
+<div id="q3" class="section level1">
+<h1>Q3</h1>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+One of the key problems in estimating causal effects using observational data is theselection problem.
+</p>
+</div>
+</div>
+<div id="a-2" class="section level2">
+<h2>a)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+Explain what is the selection problem using a simple example? (Please explicitly identify the features that might give rise to selection in context of the example provided) (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>This answer is based on homework 1.</p>
+<p>The health problem generated by HIV does not distinguish race, gender or social status, developing countries, particularly those located in Africa, have this disease as one of the main health problems, Zambia is not the exception. Thus, the intervention proposal is on HIV Prevention through Sex Education.</p>
+<p>Treatment and control groups can be selected randomly. This randomization only affects the treatment unit, but does not directly affect individuals whose heterogeneity is in: education, having or not having HIV, region of residence, beliefs about the disease, social status, religion, etc. They will affect the interpretation of the results (selection problem). Because all these factors influence the pursuit of sex education.</p>
+</div>
+</div>
+<div id="b-2" class="section level2">
+<h2>b)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+The conditional independence assumption (CIA) is suggested as a solution to the selection problem. In the context of the example provided in part (a) describe how you would implement a regression that satisfies CIA given the selection problem you identified? (2 point)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>The regression to implement would be</p>
+<p><span class="math display">\[ y_i = \alpha + \phi D_i + X&#39;_i\gamma+\mu_i \]</span> <span class="math inline">\(X_i\)</span> are the characteristics mentioned above, where observable characteristics, <span class="math inline">\(X_i\)</span> are the only reason for the correlation between <span class="math inline">\(D_i\)</span> and <span class="math inline">\(\eta_i = X&#39;_i\gamma+\mu_i\)</span></p>
+</div>
+</div>
+<div id="c-1" class="section level2">
+<h2>c)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+A researcher wants to study the relationship between provision of deworming drugs and reduction in sick leave from work. To do this the researcher decides to randomize the provision of drugs at an individual level within a village and then compare outcomes of individuals who were provided these drugs with individuals who were not. This strategy will provide us with the precise causal effect of deworming drugs. Comment. (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>The causal effect wouln’t be correctly identified, since if a control individual that is infected has contact with a treatment individual is possible that the treatment individual may have parasites again. So, specifically, the spillover effect would be biasing the results.</p>
+</div>
+</div>
+</div>
+<div id="q4" class="section level1">
+<h1>Q4</h1>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+Figure 1 shows the demand for two health products offered to consumers using take-it-or-leave-it price offers.
+</p>
+</div>
+</div>
+<p><img src="Imagenes/fig1final.png" width="100%" /></p>
+<div id="a-3" class="section level2">
+<h2>a)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+What are the key features of demand for the two health products shown in Figure1. Please summarize. (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>Both, adquisition and adquisition-usage, demand curves for the mosquito nets remain decreasing and parallel through the increments of the price, which indicates us that there is no sunk cost, since the elasticity of demand and usage are similar.</p>
+<p>The demand curves for adquisition and adquisition-usage for the water filters remain decreasing but aren’t parallel through the increments of the price, which tells us that the persons that pay more have a greater appreciation for this health product (selection effect).</p>
+</div>
+</div>
+<div id="b-3" class="section level2">
+<h2>b)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+One of the central debates in the literature has been on whether health products should be subsidised or not. What are the main conditions under which subsidisation would be socially desirable? (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<ol style="list-style-type: decimal">
+<li>That when products are introduced in the market for the society to learn about the benefits of the product itself, the marginal benefit is greater than the marginal cost (learning effects).</li>
+<li>Sunk cost effects.</li>
+<li>That the long term acceptance of the product doesn’t hold down (Anchoring effects).</li>
+<li>According to the nature of the product, its use does not have harmful side effects (subsidies in medicines vs subsidies in water filters)</li>
+</ol>
+</div>
+</div>
+<div id="c-2" class="section level2">
+<h2>c)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+Cost sharing – charging a subsidised, positive price – is argued to be necessary forcertain health products to avoid wasting resources on those who will not use ordo not need the product. Based on the demand and usage curves shown in Figure1, comment on whether prices act as a screening device and cost sharing shouldbe implemented for mosquito nets or water filters, neither or both? (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>Prices work as a detection medium for the wasting resources. In the mosquito nets the adquisition-usage curve is parallel to the adquisition curve. This occurs in a lesser proportion on the water filters, where the usage is greater when the price rises. One could conclude that the greater resources wasting occurs in the mosquito nets and y a lesser degree in the water filters, hence cost sharing would have to happen in both scenarios but in a higher proportion in the mosquito nets.</p>
+</div>
+</div>
+<div id="d-1" class="section level2">
+<h2>d)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+The finding that over inclusion is limited does not apply to medical treatment such as antimalarials or antibiotics. What makes medical treatment prescribing, for instance antibiotics, different from health products such as bed nets or waterfilters? Why is over treatment a cause for concern? (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>The difference is the nature of the product, with a subsidy on medical treatments, people that doesn’t need it may generate an over inclusion in the subvention by thinking they are infected and submit themselves to an over treatment, affecting the public health. While an over inclusion in products like bed nets or waterfilters doesn’t has that kind of consequences.</p>
+<p>Overtreatment is a matter of concern because if a non-infected person gets treated with the related medications then bacteria will develop resistance to such medications, which in turn may become a public health problem.</p>
+</div>
+<p>References:</p>
+<p>Class slides.</p>
+<p>Cohen, J., Dupas, P., &amp; Schaner, S. (2015). Price subsidies, diagnostic tests, and targeting of malaria treatment: Evidence from a randomized controlled trial. American Economic Review, 105(2), 609-45.</p>
+</div>
+</div>
+<div id="q5" class="section level1">
+<h1>Q5</h1>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+The educational system of Country A is producing very poor outcomes and they decide that they should hire more teachers to reduce the numbers of pupils per teacher (that is the pupil-teacher-ratio (PTR)) to be able to increase teacher effectiveness:
+</p>
+</div>
+</div>
+<div id="a-4" class="section level2">
+<h2>a)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+Consultant x says that increasing number of teachers might not increase the effective PTR as existing teachers might change their behaviour. Explain. (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>The efecctive PTR is:</p>
+<p><span class="math display">\[
+E P T R=\frac{P T R}{(1-\text { Absence })}
+\]</span></p>
+<p>Consultor x is assuming that the change in behaviour will be associated with the ausence of teachers.</p>
+</div>
+</div>
+<div id="b-4" class="section level2">
+<h2>b)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+Consultant y says that the new teachers should be hired on temporary contracts to create incentivises to perform better. Why? (2 point)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>If recently hired teachers find themselves in the necessity of keeping their jobs, when they realize that they don’t have a definite contract they will be motivated to have a better performance, for instance, attending to all of their classes and improving their skills in the education area.</p>
+</div>
+</div>
+<div id="c-3" class="section level2">
+<h2>c)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+In assessing effect of private schools Muralidharan and Sundaram (2015) stressthe importance of accounting for two kinds of spillovers. Elaborate (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>A group of students from a public school is moved to a private school in exchange of a bonus. Then there exist two spillover effects, one is on the private school students that receive to their new classmates (the ones that came from the public school) and the other is on the students that remain on the public school.</p>
+<p>If the public school students that moved to the private school have poorer skills than required, they will bias the overall performance downwards.</p>
+<p>If the public school students that moved to the private school have better skills and attitude than rest of the students, those students left behind in their public school will have an even worse performance, due to the lack of interaction with better skilled pairs.</p>
+<p>It is necessary to account for all the possible spillover effects in order to avoid biased conclusions.</p>
+</div>
+<p>References:</p>
+<p>Muralidharan, K., &amp; Sundararaman, V. (2013). Contract teachers: Experimental evidence from india. Working Paper No. 19440. National Bureau of Economic Research.</p>
+<p>Muralidharan, K., &amp; Sundararaman, V. (2015). The Aggregate Effect of School Choice: Evidence from a Two-Stage Experiment in India , The Quarterly Journal of Economics, Volume 130, Issue 3, August 2015, Pages 1011–1066</p>
+<p>Muralidharan, K., Das, J., Holla, A., &amp; Mohpal, A. (2017). The fiscal cost of weak governance: Evidence from teacher absence in india. Journal of Public Economics, 145, 116-135.</p>
+</div>
+</div>
+<div id="q6" class="section level1">
+<h1>Q6</h1>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+Answer the questions below pertaining to state capacity:
+</p>
+</div>
+</div>
+<div id="a-5" class="section level2">
+<h2>a)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+Besley and Persson refer to the typology of states they arrive at as the Anna Karenina Matrix based on the similarity between the opening phrase of Tolstoy’s work “All happy families resemble each other; each unhappy family is unhappy in its own way” and their categorization. Explain why. (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+<p>The analogy is made because developed states, that in this scenario represent the happy families, are similar in the absence of violence, welfare and the provision of goods and services. While the developing states, representing the unhappy families in this scenario, are heterogeneous in nature, which gives violence conditions and a diversity in state capabilities.</p>
+<p>This similitudes and differences are reflected in the categorization by using the Anna Karenina Matrix, based on the classification by the state (common-interest, special-interest and weak states) and political violence (peace, repression, and civil war).</p>
+</div>
+</div>
+<div id="b-5" class="section level2">
+<h2>b)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+In the work of Tilly in Coercion, Capital, and European States (1990), as well as Herbst (2002), the role of the international state system or the interaction betweenstates on the world stage is given a central role as regards to implications for statecapacity. Did the international system have the same or differing effects in thetwo contexts? Explain. (2 points)
+</p>
+</div>
+</div>
+<div id="respuesta">
+
+</div>
+</div>
+<div id="c-4" class="section level2">
+<h2>c)</h2>
+<div class="jumbotron">
+<div id="justificar">
+<p>
+What is the role of international system today? Does success of the chosen form of political institutions - capitalist liberal democracy, communalism, socialist state- depend on its fit with the existing choices? Explain. (2 points)
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="appendix-q1" class="section level1">
+<h1>Appendix Q1</h1>
+<pre class="r"><code>library(tidyverse)
+library(haven) # importa, entre otros software, de Stata
+library(highcharter) #gráficas interactivas
+library(sjlabelled) # manejar labels de las variables </code></pre>
+<pre class="r"><code>data &lt;- read_dta(
+                     file = &quot;Datos/NGIR6AFL.DTA&quot;,
+                     encoding = NULL
+                     )</code></pre>
+<pre class="r"><code>head(data)</code></pre>
+<pre><code>## # A tibble: 6 x 4,618
+##   caseid v000   v001  v002  v003  v004   v005  v006  v007  v008  v009  v010
+##   &lt;chr&gt;  &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1 &quot;    … NG6       1     2     2     1 1.69e6     5  2013  1361     3  1968
+## 2 &quot;    … NG6       1     2     5     1 1.69e6     5  2013  1361     1  1997
+## 3 &quot;    … NG6       1     4     2     1 1.69e6     5  2013  1361     2  1965
+## 4 &quot;    … NG6       1     6     1     1 1.69e6     5  2013  1361     5  1968
+## 5 &quot;    … NG6       1     6     2     1 1.69e6     5  2013  1361    11  1995
+## 6 &quot;    … NG6       1    11     2     1 1.69e6     5  2013  1361     7  1977
+## # … with 4,606 more variables: v011 &lt;dbl&gt;, v012 &lt;dbl&gt;, v013 &lt;dbl+lbl&gt;,
+## #   v014 &lt;dbl+lbl&gt;, v015 &lt;dbl+lbl&gt;, v016 &lt;dbl&gt;, v017 &lt;dbl&gt;, v018 &lt;dbl+lbl&gt;,
+## #   v019 &lt;dbl+lbl&gt;, v019a &lt;dbl+lbl&gt;, v020 &lt;dbl+lbl&gt;, v021 &lt;dbl&gt;,
+## #   v022 &lt;dbl+lbl&gt;, v023 &lt;dbl+lbl&gt;, v024 &lt;dbl+lbl&gt;, v025 &lt;dbl+lbl&gt;,
+## #   v026 &lt;dbl+lbl&gt;, v027 &lt;dbl&gt;, v028 &lt;dbl&gt;, v029 &lt;dbl&gt;, v030 &lt;dbl&gt;, v031 &lt;dbl&gt;,
+## #   v032 &lt;dbl&gt;, v034 &lt;dbl+lbl&gt;, v040 &lt;dbl&gt;, v042 &lt;dbl+lbl&gt;, v044 &lt;dbl+lbl&gt;,
+## #   v101 &lt;dbl+lbl&gt;, v102 &lt;dbl+lbl&gt;, v103 &lt;dbl+lbl&gt;, v104 &lt;dbl+lbl&gt;,
+## #   v105 &lt;dbl+lbl&gt;, v106 &lt;dbl+lbl&gt;, v107 &lt;dbl+lbl&gt;, v113 &lt;dbl+lbl&gt;,
+## #   v115 &lt;dbl+lbl&gt;, v116 &lt;dbl+lbl&gt;, v119 &lt;dbl+lbl&gt;, v120 &lt;dbl+lbl&gt;,
+## #   v121 &lt;dbl+lbl&gt;, v122 &lt;dbl+lbl&gt;, v123 &lt;dbl+lbl&gt;, v124 &lt;dbl+lbl&gt;,
+## #   v125 &lt;dbl+lbl&gt;, v127 &lt;dbl+lbl&gt;, v128 &lt;dbl+lbl&gt;, v129 &lt;dbl+lbl&gt;,
+## #   v130 &lt;dbl+lbl&gt;, v131 &lt;dbl+lbl&gt;, v133 &lt;dbl+lbl&gt;, v134 &lt;dbl+lbl&gt;,
+## #   v135 &lt;dbl+lbl&gt;, v136 &lt;dbl&gt;, v137 &lt;dbl&gt;, v138 &lt;dbl&gt;, v139 &lt;dbl+lbl&gt;,
+## #   v140 &lt;dbl+lbl&gt;, v141 &lt;dbl+lbl&gt;, v149 &lt;dbl+lbl&gt;, v150 &lt;dbl+lbl&gt;,
+## #   v151 &lt;dbl+lbl&gt;, v152 &lt;dbl+lbl&gt;, v153 &lt;dbl+lbl&gt;, awfactt &lt;dbl&gt;,
+## #   awfactu &lt;dbl&gt;, awfactr &lt;dbl&gt;, awfacte &lt;dbl&gt;, awfactw &lt;dbl&gt;, v155 &lt;dbl+lbl&gt;,
+## #   v156 &lt;dbl+lbl&gt;, v157 &lt;dbl+lbl&gt;, v158 &lt;dbl+lbl&gt;, v159 &lt;dbl+lbl&gt;,
+## #   v160 &lt;dbl+lbl&gt;, v161 &lt;dbl+lbl&gt;, v166 &lt;dbl+lbl&gt;, v167 &lt;dbl+lbl&gt;,
+## #   v168 &lt;dbl+lbl&gt;, v190 &lt;dbl+lbl&gt;, v191 &lt;dbl&gt;, ml101 &lt;dbl+lbl&gt;, bidx_01 &lt;dbl&gt;,
+## #   bidx_02 &lt;dbl&gt;, bidx_03 &lt;dbl&gt;, bidx_04 &lt;dbl&gt;, bidx_05 &lt;dbl&gt;, bidx_06 &lt;dbl&gt;,
+## #   bidx_07 &lt;dbl&gt;, bidx_08 &lt;dbl&gt;, bidx_09 &lt;dbl&gt;, bidx_10 &lt;dbl&gt;, bidx_11 &lt;dbl&gt;,
+## #   bidx_12 &lt;dbl&gt;, bidx_13 &lt;dbl&gt;, bidx_14 &lt;dbl&gt;, bidx_15 &lt;dbl&gt;, bidx_16 &lt;dbl&gt;,
+## #   bidx_17 &lt;dbl&gt;, bidx_18 &lt;dbl&gt;, bidx_19 &lt;dbl&gt;, …</code></pre>
+<pre class="r"><code>etiquetas&lt;-get_label(data)
+etiquetas_unicas&lt;-unique(etiquetas)
+num_filas&lt;-nrow(data)</code></pre>
+<pre class="r"><code>variables&lt;-colnames(data)
+variables&lt;-sort(variables)</code></pre>
+<pre class="r"><code>myMenuItems &lt;- c(&quot;downloadPNG&quot;, &quot;downloadJPEG&quot;, &quot;downloadPDF&quot;, &#39;downloadSVG&#39;, &#39;printChart&#39;)
+
+data %&gt;%
+  count(v012)%&gt;% 
+  hchart(&#39;column&#39;,
+         hcaes( y = &#39;n&#39;))%&gt;%
+  hc_add_theme(hc_theme_economist())%&gt;%
+  hc_title(
+    text = get_label(data$v012)
+  ) %&gt;%
+  hc_subtitle(text = &quot;interactive graphics&quot;) %&gt;%
+  # hc_credits(
+  #  enabled = TRUE, text = &quot;Source: SSS&quot;,
+  #  style = list(fontSize = &quot;12px&quot;))%&gt;%
+  hc_yAxis(title = list(text = &quot;Women&quot;))%&gt;%
+  hc_xAxis(title=list(text=&quot;Age&quot;),
+           categories = as.character(sort(unique(data$v012)))) %&gt;%
+    hc_exporting(enabled = TRUE,
+               filename = &quot;datos&quot;,
+               buttons = list(contextButton = list(menuItems = myMenuItems)))</code></pre>
+<div id="htmlwidget-c01a2018cb33d8dd1f93" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c01a2018cb33d8dd1f93">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"respondent's current age"},"yAxis":{"title":{"text":"Women"}},"credits":{"enabled":false},"exporting":{"enabled":true,"filename":"datos","buttons":{"contextButton":{"menuItems":["downloadPNG","downloadJPEG","downloadPDF","downloadSVG","printChart"]}}},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"group":"group","data":[{"v012":15,"n":2052,"y":2052},{"v012":16,"n":1497,"y":1497},{"v012":17,"n":1397,"y":1397},{"v012":18,"n":1761,"y":1761},{"v012":19,"n":1198,"y":1198},{"v012":20,"n":2281,"y":2281},{"v012":21,"n":979,"y":979},{"v012":22,"n":1388,"y":1388},{"v012":23,"n":1076,"y":1076},{"v012":24,"n":990,"y":990},{"v012":25,"n":2327,"y":2327},{"v012":26,"n":1149,"y":1149},{"v012":27,"n":1210,"y":1210},{"v012":28,"n":1441,"y":1441},{"v012":29,"n":910,"y":910},{"v012":30,"n":2350,"y":2350},{"v012":31,"n":595,"y":595},{"v012":32,"n":1001,"y":1001},{"v012":33,"n":806,"y":806},{"v012":34,"n":621,"y":621},{"v012":35,"n":1832,"y":1832},{"v012":36,"n":726,"y":726},{"v012":37,"n":661,"y":661},{"v012":38,"n":906,"y":906},{"v012":39,"n":576,"y":576},{"v012":40,"n":1580,"y":1580},{"v012":41,"n":428,"y":428},{"v012":42,"n":712,"y":712},{"v012":43,"n":550,"y":550},{"v012":44,"n":393,"y":393},{"v012":45,"n":1124,"y":1124},{"v012":46,"n":457,"y":457},{"v012":47,"n":431,"y":431},{"v012":48,"n":782,"y":782},{"v012":49,"n":761,"y":761}],"type":"column"}],"xAxis":{"title":{"text":"Age"},"categories":["15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49"]},"subtitle":{"text":"interactive graphics"}},"theme":{"colors":["#6794a7","#014d64","#76c0c1","#01a2d9","#7ad2f6","#00887d","#adadad","#7bd3f6","#7c260b","#ee8f71","#76c0c1","#a18376"],"chart":{"backgroundColor":"#d5e4eb","style":{"fontFamily":"Droid Sans","color":"#3C3C3C"}},"title":{"align":"left","style":{"fontWeight":"bold"}},"subtitle":{"align":"left"},"yAxis":{"gridLineColor":"#FFFFFF","lineColor":"#FFFFFF","minorGridLineColor":"#FFFFFF","tickColor":"#D7D7D8","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"#FFFFFF","borderColor":"#76c0c1","style":{"color":"#000000"}},"legend":{"itemStyle":{"color":"#3C3C3C"},"itemHiddenStyle":{"color":"#606063"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#D7D7D8"}},"drilldown":{"activeAxisLabelStyle":{"color":"#F0F0F3"},"activeDataLabelStyle":{"color":"#F0F0F3"}},"navigation":{"buttonOptions":{"symbolStroke":"#DDDDDD","theme":{"fill":"#505053"}}},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Droid+Sans","debug":false},"evals":[],"jsHooks":[]}</script>
+<pre class="r"><code>data %&gt;%
+  count(v131)%&gt;% 
+  hchart(&#39;column&#39;,
+         hcaes( y = &#39;n&#39;))%&gt;%
+  hc_add_theme(hc_theme_economist())%&gt;%
+  hc_title(
+    text = get_label(data$v131)
+  ) %&gt;%
+  hc_subtitle(text = &quot;interactive graphics&quot;) %&gt;%
+  # hc_credits(
+  #  enabled = TRUE, text = &quot;Source: SSS&quot;,
+  #  style = list(fontSize = &quot;12px&quot;))%&gt;%
+  hc_yAxis(title = list(text = &quot;Number&quot;))%&gt;%
+  hc_xAxis(title=list(text=&quot;Ethnicity&quot;),
+           categories = get_labels(data$v131)) %&gt;%
+    hc_exporting(enabled = TRUE,
+               filename = &quot;datos&quot;,
+               buttons = list(contextButton = list(menuItems = myMenuItems)))</code></pre>
+<div id="htmlwidget-6fa9ea46fe94a1e4fe10" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6fa9ea46fe94a1e4fe10">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"ethnicity"},"yAxis":{"title":{"text":"Number"}},"credits":{"enabled":false},"exporting":{"enabled":true,"filename":"datos","buttons":{"contextButton":{"menuItems":["downloadPNG","downloadJPEG","downloadPDF","downloadSVG","printChart"]}}},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"group":"group","data":[{"v131":1,"n":39,"y":39},{"v131":2,"n":2,"y":2},{"v131":5,"n":2,"y":2},{"v131":6,"n":35,"y":35},{"v131":7,"n":117,"y":117},{"v131":8,"n":24,"y":24},{"v131":9,"n":3,"y":3},{"v131":10,"n":84,"y":84},{"v131":12,"n":12,"y":12},{"v131":13,"n":4,"y":4},{"v131":14,"n":1,"y":1},{"v131":15,"n":72,"y":72},{"v131":17,"n":1,"y":1},{"v131":18,"n":2,"y":2},{"v131":19,"n":8,"y":8},{"v131":20,"n":2,"y":2},{"v131":21,"n":263,"y":263},{"v131":22,"n":4,"y":4},{"v131":23,"n":1,"y":1},{"v131":25,"n":1,"y":1},{"v131":26,"n":53,"y":53},{"v131":27,"n":1,"y":1},{"v131":28,"n":6,"y":6},{"v131":29,"n":1,"y":1},{"v131":30,"n":2,"y":2},{"v131":31,"n":1,"y":1},{"v131":32,"n":17,"y":17},{"v131":33,"n":56,"y":56},{"v131":34,"n":3,"y":3},{"v131":35,"n":1,"y":1},{"v131":36,"n":13,"y":13},{"v131":37,"n":28,"y":28},{"v131":38,"n":1,"y":1},{"v131":39,"n":4,"y":4},{"v131":40,"n":29,"y":29},{"v131":41,"n":2,"y":2},{"v131":42,"n":7,"y":7},{"v131":43,"n":2,"y":2},{"v131":44,"n":33,"y":33},{"v131":45,"n":3,"y":3},{"v131":46,"n":17,"y":17},{"v131":47,"n":9,"y":9},{"v131":48,"n":1,"y":1},{"v131":49,"n":2,"y":2},{"v131":50,"n":148,"y":148},{"v131":51,"n":2,"y":2},{"v131":53,"n":108,"y":108},{"v131":54,"n":283,"y":283},{"v131":55,"n":53,"y":53},{"v131":56,"n":7,"y":7},{"v131":57,"n":63,"y":63},{"v131":59,"n":4,"y":4},{"v131":60,"n":64,"y":64},{"v131":61,"n":159,"y":159},{"v131":62,"n":6,"y":6},{"v131":63,"n":1,"y":1},{"v131":64,"n":22,"y":22},{"v131":65,"n":2,"y":2},{"v131":66,"n":85,"y":85},{"v131":67,"n":1,"y":1},{"v131":68,"n":7,"y":7},{"v131":69,"n":5,"y":5},{"v131":70,"n":54,"y":54},{"v131":71,"n":76,"y":76},{"v131":74,"n":14,"y":14},{"v131":77,"n":21,"y":21},{"v131":79,"n":3,"y":3},{"v131":80,"n":2,"y":2},{"v131":83,"n":399,"y":399},{"v131":84,"n":2,"y":2},{"v131":85,"n":146,"y":146},{"v131":86,"n":2,"y":2},{"v131":87,"n":1,"y":1},{"v131":88,"n":164,"y":164},{"v131":89,"n":87,"y":87},{"v131":90,"n":2,"y":2},{"v131":91,"n":34,"y":34},{"v131":92,"n":85,"y":85},{"v131":94,"n":5,"y":5},{"v131":95,"n":16,"y":16},{"v131":96,"n":2,"y":2},{"v131":97,"n":356,"y":356},{"v131":99,"n":112,"y":112},{"v131":100,"n":52,"y":52},{"v131":103,"n":8,"y":8},{"v131":104,"n":2,"y":2},{"v131":105,"n":3,"y":3},{"v131":107,"n":1,"y":1},{"v131":108,"n":4,"y":4},{"v131":109,"n":2425,"y":2425},{"v131":111,"n":2,"y":2},{"v131":113,"n":24,"y":24},{"v131":114,"n":1,"y":1},{"v131":115,"n":258,"y":258},{"v131":116,"n":109,"y":109},{"v131":117,"n":3,"y":3},{"v131":118,"n":1,"y":1},{"v131":121,"n":2,"y":2},{"v131":122,"n":3,"y":3},{"v131":124,"n":2,"y":2},{"v131":125,"n":15,"y":15},{"v131":126,"n":1,"y":1},{"v131":127,"n":25,"y":25},{"v131":128,"n":4,"y":4},{"v131":129,"n":5,"y":5},{"v131":130,"n":9386,"y":9386},{"v131":131,"n":37,"y":37},{"v131":132,"n":2,"y":2},{"v131":133,"n":849,"y":849},{"v131":134,"n":19,"y":19},{"v131":135,"n":8,"y":8},{"v131":136,"n":353,"y":353},{"v131":137,"n":416,"y":416},{"v131":138,"n":5448,"y":5448},{"v131":139,"n":120,"y":120},{"v131":140,"n":1590,"y":1590},{"v131":141,"n":2,"y":2},{"v131":142,"n":1,"y":1},{"v131":143,"n":109,"y":109},{"v131":144,"n":2,"y":2},{"v131":145,"n":4,"y":4},{"v131":148,"n":5,"y":5},{"v131":149,"n":45,"y":45},{"v131":150,"n":59,"y":59},{"v131":151,"n":51,"y":51},{"v131":152,"n":18,"y":18},{"v131":153,"n":126,"y":126},{"v131":154,"n":22,"y":22},{"v131":155,"n":90,"y":90},{"v131":156,"n":5,"y":5},{"v131":158,"n":7,"y":7},{"v131":159,"n":30,"y":30},{"v131":160,"n":40,"y":40},{"v131":162,"n":2,"y":2},{"v131":163,"n":8,"y":8},{"v131":164,"n":38,"y":38},{"v131":165,"n":8,"y":8},{"v131":166,"n":9,"y":9},{"v131":167,"n":1,"y":1},{"v131":168,"n":14,"y":14},{"v131":169,"n":18,"y":18},{"v131":170,"n":6,"y":6},{"v131":171,"n":1,"y":1},{"v131":172,"n":278,"y":278},{"v131":173,"n":6,"y":6},{"v131":174,"n":51,"y":51},{"v131":175,"n":1,"y":1},{"v131":176,"n":7,"y":7},{"v131":177,"n":9,"y":9},{"v131":178,"n":46,"y":46},{"v131":179,"n":523,"y":523},{"v131":180,"n":2,"y":2},{"v131":181,"n":156,"y":156},{"v131":182,"n":73,"y":73},{"v131":184,"n":1,"y":1},{"v131":185,"n":66,"y":66},{"v131":187,"n":1,"y":1},{"v131":188,"n":1,"y":1},{"v131":189,"n":13,"y":13},{"v131":190,"n":65,"y":65},{"v131":191,"n":10,"y":10},{"v131":193,"n":1,"y":1},{"v131":194,"n":1,"y":1},{"v131":195,"n":50,"y":50},{"v131":196,"n":16,"y":16},{"v131":198,"n":23,"y":23},{"v131":200,"n":1,"y":1},{"v131":201,"n":1,"y":1},{"v131":202,"n":2,"y":2},{"v131":203,"n":63,"y":63},{"v131":204,"n":117,"y":117},{"v131":205,"n":3,"y":3},{"v131":206,"n":161,"y":161},{"v131":207,"n":46,"y":46},{"v131":208,"n":166,"y":166},{"v131":209,"n":4,"y":4},{"v131":210,"n":42,"y":42},{"v131":211,"n":83,"y":83},{"v131":212,"n":3,"y":3},{"v131":215,"n":8,"y":8},{"v131":216,"n":18,"y":18},{"v131":217,"n":259,"y":259},{"v131":218,"n":125,"y":125},{"v131":219,"n":37,"y":37},{"v131":220,"n":2,"y":2},{"v131":221,"n":58,"y":58},{"v131":225,"n":1,"y":1},{"v131":226,"n":22,"y":22},{"v131":227,"n":39,"y":39},{"v131":228,"n":2,"y":2},{"v131":231,"n":9,"y":9},{"v131":232,"n":23,"y":23},{"v131":233,"n":40,"y":40},{"v131":234,"n":5,"y":5},{"v131":235,"n":1,"y":1},{"v131":236,"n":35,"y":35},{"v131":237,"n":533,"y":533},{"v131":238,"n":2,"y":2},{"v131":239,"n":2,"y":2},{"v131":240,"n":47,"y":47},{"v131":241,"n":183,"y":183},{"v131":243,"n":1,"y":1},{"v131":245,"n":7,"y":7},{"v131":246,"n":146,"y":146},{"v131":247,"n":74,"y":74},{"v131":249,"n":24,"y":24},{"v131":250,"n":7,"y":7},{"v131":252,"n":3,"y":3},{"v131":253,"n":1,"y":1},{"v131":254,"n":15,"y":15},{"v131":255,"n":39,"y":39},{"v131":256,"n":15,"y":15},{"v131":257,"n":2,"y":2},{"v131":259,"n":2,"y":2},{"v131":260,"n":76,"y":76},{"v131":261,"n":13,"y":13},{"v131":262,"n":1,"y":1},{"v131":263,"n":2,"y":2},{"v131":265,"n":11,"y":11},{"v131":266,"n":1,"y":1},{"v131":267,"n":1,"y":1},{"v131":268,"n":1,"y":1},{"v131":269,"n":1,"y":1},{"v131":270,"n":86,"y":86},{"v131":272,"n":230,"y":230},{"v131":273,"n":53,"y":53},{"v131":274,"n":1,"y":1},{"v131":275,"n":2,"y":2},{"v131":276,"n":621,"y":621},{"v131":278,"n":11,"y":11},{"v131":281,"n":1,"y":1},{"v131":282,"n":54,"y":54},{"v131":283,"n":582,"y":582},{"v131":284,"n":5,"y":5},{"v131":286,"n":1,"y":1},{"v131":287,"n":79,"y":79},{"v131":288,"n":3,"y":3},{"v131":289,"n":5,"y":5},{"v131":291,"n":12,"y":12},{"v131":293,"n":192,"y":192},{"v131":294,"n":115,"y":115},{"v131":295,"n":2,"y":2},{"v131":296,"n":1,"y":1},{"v131":297,"n":7,"y":7},{"v131":298,"n":5606,"y":5606},{"v131":299,"n":27,"y":27},{"v131":301,"n":1,"y":1},{"v131":302,"n":3,"y":3},{"v131":303,"n":1,"y":1},{"v131":305,"n":31,"y":31},{"v131":306,"n":1,"y":1},{"v131":307,"n":1,"y":1},{"v131":309,"n":12,"y":12},{"v131":310,"n":24,"y":24},{"v131":311,"n":27,"y":27},{"v131":313,"n":391,"y":391},{"v131":314,"n":7,"y":7},{"v131":315,"n":1,"y":1},{"v131":317,"n":28,"y":28},{"v131":320,"n":2,"y":2},{"v131":321,"n":1,"y":1},{"v131":322,"n":1,"y":1},{"v131":323,"n":52,"y":52},{"v131":324,"n":49,"y":49},{"v131":327,"n":1,"y":1},{"v131":328,"n":2,"y":2},{"v131":330,"n":4,"y":4},{"v131":331,"n":1,"y":1},{"v131":332,"n":8,"y":8},{"v131":333,"n":99,"y":99},{"v131":334,"n":7,"y":7},{"v131":335,"n":2,"y":2},{"v131":336,"n":50,"y":50},{"v131":339,"n":50,"y":50},{"v131":341,"n":16,"y":16},{"v131":342,"n":31,"y":31},{"v131":344,"n":33,"y":33},{"v131":345,"n":5,"y":5},{"v131":346,"n":1,"y":1},{"v131":347,"n":8,"y":8},{"v131":349,"n":3,"y":3},{"v131":350,"n":37,"y":37},{"v131":357,"n":3,"y":3},{"v131":358,"n":2,"y":2},{"v131":360,"n":4,"y":4},{"v131":361,"n":68,"y":68},{"v131":362,"n":2,"y":2},{"v131":366,"n":3,"y":3},{"v131":367,"n":1,"y":1},{"v131":368,"n":11,"y":11},{"v131":369,"n":4,"y":4},{"v131":371,"n":86,"y":86},{"v131":372,"n":1,"y":1},{"v131":378,"n":1,"y":1},{"v131":379,"n":13,"y":13},{"v131":380,"n":1,"y":1},{"v131":381,"n":1,"y":1},{"v131":382,"n":2,"y":2},{"v131":385,"n":1,"y":1},{"v131":387,"n":2,"y":2},{"v131":388,"n":8,"y":8},{"v131":389,"n":2,"y":2},{"v131":392,"n":97,"y":97},{"v131":393,"n":19,"y":19},{"v131":395,"n":35,"y":35},{"v131":397,"n":3,"y":3},{"v131":398,"n":13,"y":13},{"v131":996,"n":358,"y":358},{"v131":998,"n":2,"y":2},{"v131":999,"n":61,"y":61}],"type":"column"}],"xAxis":{"title":{"text":"Ethnicity"},"categories":["abua","adra/adarawa","adun","afcabeya","afemai","afizire","agatu","agbassa","agbor","afo","ajowa","akpa","akwai","akye","alago","amamong","amo","ana","anaguta","ankwai","annang","arab","arabo","arbar","arugu","aten/atam","attakar","auchi","aulliminden","awo","ayetoro gbede","badarare","bade/badawe","bafeke","bagathiya","baggara","bagunge/badagire","bahnake","baji/biji","bajju","bambaro","bambuka","bandawa","banguji","bankalawa","bchama","barabaci","barawa","bargawa","bassa","bekworas","berom","bini/edo","bogom","boiyawa/bozaya","bolawa/bolewa","buduma","buko","bura/babur","buzu","byazhi","calabar","chala","chamba","chiba","chibok(g)","chip","dadiya","badakare/dakarkari","dakka/doka","dangula","daurawa/dagarawa","defaka","degima","delta ibo","dibo","diguza","djerma","dmoko","dolchi","ebira/igbira","ebu","efik","egba","egbado","eggon","egun","eket","ekoi","ekpeye/afisa/epie","ekulu","eleme","emu","esan","etina","etsako","etulo","hadejawa","fanso","femawa","fer","filiya/fali","fon","foron","french","fulani","gamaku","gamaru","gamuni","gana gana","ganawuri","gbaju/gbagi","gede/gude/gai","gerawa","gizmawa","glauda","gmenchi","gomo/gamoyaya","gobiri/gobirawa/bogobiri","gujjurawa","guemai","gumbarawa","gunganchi","gwandara","gwantu","hankwe","hausa","higgi","ibariba","ibibio","ichen","idanre","idoma","igala","igbo/ibo","igede","ijaw/izon","ijede","ijeme","ika","ikajo","ikara","ikpeshi","ikpide","ikulu","ikwere","ilaje","irigwe","ishan","isoko","itsekiri","jaba","jajiri","jakatoe","jaku","jara","jarawa","jibu","jonjo","jukun","kabawa","kadara","kagoma","kagoro","kaka","kakanda","kamantam","kambari","kambu/kangu","kamuku","kanakuru","kanawa","kaninko","kantanawa","kanuri/beriberi","manga","karekare","kataf/atyap","kento","kibaku","kilba","kirdi","kodki","kofyar","kona","koro","koto","kuenuem","kumbo","kunkawa/kawa","kurama","kuteb","kuturm","kwale/ukwuani","kwanzo","lagelu","lantang","lemoro","loh","lunguda","maba/mbadowa","mada","mafa/maka/maga","mambila","mandara","mangus/manju","marghi/mangi","mbwa","mingo","mirnang","montor","mtchiga/michika","mumuye","munga","mupung","mushere","mwagavol","naiawum","namoen","ndokwa","ndola","ngamo","ukale","ngoshe","nili","ninnma","ninzom","nkoroo","nnebe","numana","nungu","nunku","nupe","obubua","odu","ogoja","ogoni","ogugu","okori/ogori","omele","ora","oron","owan","owo","pa'awa","paburi","paibun","panya","pasama","pero","piya","pyem","rukuba","rulere","rundawa","sayawa/siyawa","sekere","sharawa","shomo","shuwa","somunka","sullubawa","sura","taira","tangale","tarok","tera","teskwa","tiguni ( ? )","tiv","tiyari","tula","ubaija","ugbia","uhionigbe","ukwuani","urhobo","uyo","uzaurue","uzeba","waja","waka","wanu","wari","warjawa","wodaabe","wurkum","yakurr","yandang","yendre","yonubi","yoruba","zabarmawa","kaje","igbanko","okori/ogori","migili","gwari","uru","okirika","egi","ogba","moroa","marwa","toff","fulfulde","kabba/okun","bakabe","burmanch","kalabari","miship","karimjo","kwa","angas","bobari","yarimawa","bakenga","agazawa","gwoza","zalidva","nyangdang","ngezim","hanbagda","njanyi","dumak","kwalla","yeskwa and mubula","bile","offa","yungur","pura pura","rindre","dukawa","ningi","cham","kamo","lala","laru","lisa","gaanda","ezza","kubasawa.","gusu","ikpoma","buh","mushere","chakeem","jipal","ugeb","koma","verre/kila","zuru","honna","kapsiki","jere","gizi yobe","karekare","kulere","beteer","bashama","antocha","baruba/baruntin","nezou","dibba","kanum","gasawa","muryan","bageri","ahu","basange","nakere","batunu","sanga","ohari","numuro","tangale","guruma","otuwo","batala","ogbo","egbema","dara","andoni","obolo","pegan","iyala","jibawa","mungaduso","okobo","other","don't know"]},"subtitle":{"text":"interactive graphics"}},"theme":{"colors":["#6794a7","#014d64","#76c0c1","#01a2d9","#7ad2f6","#00887d","#adadad","#7bd3f6","#7c260b","#ee8f71","#76c0c1","#a18376"],"chart":{"backgroundColor":"#d5e4eb","style":{"fontFamily":"Droid Sans","color":"#3C3C3C"}},"title":{"align":"left","style":{"fontWeight":"bold"}},"subtitle":{"align":"left"},"yAxis":{"gridLineColor":"#FFFFFF","lineColor":"#FFFFFF","minorGridLineColor":"#FFFFFF","tickColor":"#D7D7D8","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"#FFFFFF","borderColor":"#76c0c1","style":{"color":"#000000"}},"legend":{"itemStyle":{"color":"#3C3C3C"},"itemHiddenStyle":{"color":"#606063"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#D7D7D8"}},"drilldown":{"activeAxisLabelStyle":{"color":"#F0F0F3"},"activeDataLabelStyle":{"color":"#F0F0F3"}},"navigation":{"buttonOptions":{"symbolStroke":"#DDDDDD","theme":{"fill":"#505053"}}},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Droid+Sans","debug":false},"evals":[],"jsHooks":[]}</script>
+<pre class="r"><code>data %&gt;%
+  count(v101)%&gt;% 
+  hchart(&#39;column&#39;,
+         hcaes( y = &#39;n&#39;))%&gt;%
+  hc_add_theme(hc_theme_economist())%&gt;%
+  hc_title(
+    text = get_label(data$v101)
+  ) %&gt;%
+  hc_subtitle(text = &quot;interactive graphics&quot;) %&gt;%
+  # hc_credits(
+  #  enabled = TRUE, text = &quot;Source: SSS&quot;,
+  #  style = list(fontSize = &quot;12px&quot;))%&gt;%
+  hc_yAxis(title = list(text = &quot;Number&quot;))%&gt;%
+  hc_xAxis(title=list(text=&quot;Region&quot;),
+           categories = get_labels(data$v101)) %&gt;%
+    hc_exporting(enabled = TRUE,
+               filename = &quot;datos&quot;,
+               buttons = list(contextButton = list(menuItems = myMenuItems)))</code></pre>
+<div id="htmlwidget-f9f382d9b32ca079028c" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f9f382d9b32ca079028c">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"region"},"yAxis":{"title":{"text":"Number"}},"credits":{"enabled":false},"exporting":{"enabled":true,"filename":"datos","buttons":{"contextButton":{"menuItems":["downloadPNG","downloadJPEG","downloadPDF","downloadSVG","printChart"]}}},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"group":"group","data":[{"v101":1,"n":6251,"y":6251},{"v101":2,"n":6630,"y":6630},{"v101":3,"n":9673,"y":9673},{"v101":4,"n":4462,"y":4462},{"v101":5,"n":6058,"y":6058},{"v101":6,"n":5874,"y":5874}],"type":"column"}],"xAxis":{"title":{"text":"Region"},"categories":["north central","north east","north west","south east","south south","south west"]},"subtitle":{"text":"interactive graphics"}},"theme":{"colors":["#6794a7","#014d64","#76c0c1","#01a2d9","#7ad2f6","#00887d","#adadad","#7bd3f6","#7c260b","#ee8f71","#76c0c1","#a18376"],"chart":{"backgroundColor":"#d5e4eb","style":{"fontFamily":"Droid Sans","color":"#3C3C3C"}},"title":{"align":"left","style":{"fontWeight":"bold"}},"subtitle":{"align":"left"},"yAxis":{"gridLineColor":"#FFFFFF","lineColor":"#FFFFFF","minorGridLineColor":"#FFFFFF","tickColor":"#D7D7D8","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"#FFFFFF","borderColor":"#76c0c1","style":{"color":"#000000"}},"legend":{"itemStyle":{"color":"#3C3C3C"},"itemHiddenStyle":{"color":"#606063"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#D7D7D8"}},"drilldown":{"activeAxisLabelStyle":{"color":"#F0F0F3"},"activeDataLabelStyle":{"color":"#F0F0F3"}},"navigation":{"buttonOptions":{"symbolStroke":"#DDDDDD","theme":{"fill":"#505053"}}},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Droid+Sans","debug":false},"evals":[],"jsHooks":[]}</script>
+<pre class="r"><code>data %&gt;%
+  count(v149)%&gt;% 
+  hchart(&#39;column&#39;,
+         hcaes( y = &#39;n&#39;))%&gt;%
+  hc_add_theme(hc_theme_economist())%&gt;%
+  hc_title(
+    text = get_label(data$v149)
+  ) %&gt;%
+  hc_subtitle(text = &quot;interactive graphics&quot;) %&gt;%
+  # hc_credits(
+  #  enabled = TRUE, text = &quot;Source: SSS&quot;,
+  #  style = list(fontSize = &quot;12px&quot;))%&gt;%
+  hc_yAxis(title = list(text = &quot;Number&quot;))%&gt;%
+  hc_xAxis(title=list(text=&quot;Category of educational attainment&quot;),
+           categories = get_labels(data$v149)) %&gt;%
+    hc_exporting(enabled = TRUE,
+               filename = &quot;datos&quot;,
+               buttons = list(contextButton = list(menuItems = myMenuItems)))</code></pre>
+<div id="htmlwidget-92ce7fd4e62a0fd6afb0" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-92ce7fd4e62a0fd6afb0">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"educational attainment"},"yAxis":{"title":{"text":"Number"}},"credits":{"enabled":false},"exporting":{"enabled":true,"filename":"datos","buttons":{"contextButton":{"menuItems":["downloadPNG","downloadJPEG","downloadPDF","downloadSVG","printChart"]}}},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"group":"group","data":[{"v149":0,"n":13740,"y":13740},{"v149":1,"n":2151,"y":2151},{"v149":2,"n":4953,"y":4953},{"v149":3,"n":7228,"y":7228},{"v149":4,"n":7179,"y":7179},{"v149":5,"n":3697,"y":3697}],"type":"column"}],"xAxis":{"title":{"text":"Category of educational attainment"},"categories":["no education","incomplete primary","complete primary","incomplete secondary","complete secondary","higher"]},"subtitle":{"text":"interactive graphics"}},"theme":{"colors":["#6794a7","#014d64","#76c0c1","#01a2d9","#7ad2f6","#00887d","#adadad","#7bd3f6","#7c260b","#ee8f71","#76c0c1","#a18376"],"chart":{"backgroundColor":"#d5e4eb","style":{"fontFamily":"Droid Sans","color":"#3C3C3C"}},"title":{"align":"left","style":{"fontWeight":"bold"}},"subtitle":{"align":"left"},"yAxis":{"gridLineColor":"#FFFFFF","lineColor":"#FFFFFF","minorGridLineColor":"#FFFFFF","tickColor":"#D7D7D8","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"#FFFFFF","borderColor":"#76c0c1","style":{"color":"#000000"}},"legend":{"itemStyle":{"color":"#3C3C3C"},"itemHiddenStyle":{"color":"#606063"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#D7D7D8"}},"drilldown":{"activeAxisLabelStyle":{"color":"#F0F0F3"},"activeDataLabelStyle":{"color":"#F0F0F3"}},"navigation":{"buttonOptions":{"symbolStroke":"#DDDDDD","theme":{"fill":"#505053"}}},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Droid+Sans","debug":false},"evals":[],"jsHooks":[]}</script>
+<pre class="r"><code>data %&gt;%
+  count(v149,v101)%&gt;%
+  group_by(v101)%&gt;%
+  hchart(&#39;column&#39;,
+         hcaes( y = &#39;n&#39;,group = as_label(v149)))%&gt;%
+  hc_add_theme(hc_theme_economist())%&gt;%
+  hc_title(
+    text = &quot;Educational attainment by region&quot;
+  ) %&gt;%
+  hc_subtitle(text = &quot;interactive graphics&quot;) %&gt;%
+  # hc_credits(
+  #  enabled = TRUE, text = &quot;Source: SSS&quot;,
+  #  style = list(fontSize = &quot;12px&quot;))%&gt;%
+  hc_yAxis(title = list(text = &quot;Number&quot;))%&gt;%
+  hc_xAxis(title=list(text=&quot;Educational Attainment / Region&quot;),
+           categories = get_labels(data$v101)) %&gt;%
+    hc_exporting(enabled = TRUE,
+               filename = &quot;datos&quot;,
+               buttons = list(contextButton = list(menuItems = myMenuItems)))</code></pre>
+<div id="htmlwidget-07fbed2691cd8081d208" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-07fbed2691cd8081d208">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"Educational attainment by region"},"yAxis":{"title":{"text":"Number"}},"credits":{"enabled":false},"exporting":{"enabled":true,"filename":"datos","buttons":{"contextButton":{"menuItems":["downloadPNG","downloadJPEG","downloadPDF","downloadSVG","printChart"]}}},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"no education","data":[{"v149":0,"v101":1,"n":1627,"y":1627},{"v149":0,"v101":2,"n":3964,"y":3964},{"v149":0,"v101":3,"n":7062,"y":7062},{"v149":0,"v101":4,"n":256,"y":256},{"v149":0,"v101":5,"n":336,"y":336},{"v149":0,"v101":6,"n":495,"y":495}],"type":"column"},{"name":"incomplete primary","data":[{"v149":1,"v101":1,"n":432,"y":432},{"v149":1,"v101":2,"n":449,"y":449},{"v149":1,"v101":3,"n":323,"y":323},{"v149":1,"v101":4,"n":302,"y":302},{"v149":1,"v101":5,"n":452,"y":452},{"v149":1,"v101":6,"n":193,"y":193}],"type":"column"},{"name":"complete primary","data":[{"v149":2,"v101":1,"n":959,"y":959},{"v149":2,"v101":2,"n":592,"y":592},{"v149":2,"v101":3,"n":752,"y":752},{"v149":2,"v101":4,"n":654,"y":654},{"v149":2,"v101":5,"n":1097,"y":1097},{"v149":2,"v101":6,"n":899,"y":899}],"type":"column"},{"name":"incomplete secondary","data":[{"v149":3,"v101":1,"n":1261,"y":1261},{"v149":3,"v101":2,"n":738,"y":738},{"v149":3,"v101":3,"n":732,"y":732},{"v149":3,"v101":4,"n":1291,"y":1291},{"v149":3,"v101":5,"n":1841,"y":1841},{"v149":3,"v101":6,"n":1365,"y":1365}],"type":"column"},{"name":"complete secondary","data":[{"v149":4,"v101":1,"n":1160,"y":1160},{"v149":4,"v101":2,"n":551,"y":551},{"v149":4,"v101":3,"n":599,"y":599},{"v149":4,"v101":4,"n":1347,"y":1347},{"v149":4,"v101":5,"n":1642,"y":1642},{"v149":4,"v101":6,"n":1880,"y":1880}],"type":"column"},{"name":"higher","data":[{"v149":5,"v101":1,"n":812,"y":812},{"v149":5,"v101":2,"n":336,"y":336},{"v149":5,"v101":3,"n":205,"y":205},{"v149":5,"v101":4,"n":612,"y":612},{"v149":5,"v101":5,"n":690,"y":690},{"v149":5,"v101":6,"n":1042,"y":1042}],"type":"column"}],"xAxis":{"title":{"text":"Educational Attainment / Region"},"categories":["north central","north east","north west","south east","south south","south west"]},"subtitle":{"text":"interactive graphics"}},"theme":{"colors":["#6794a7","#014d64","#76c0c1","#01a2d9","#7ad2f6","#00887d","#adadad","#7bd3f6","#7c260b","#ee8f71","#76c0c1","#a18376"],"chart":{"backgroundColor":"#d5e4eb","style":{"fontFamily":"Droid Sans","color":"#3C3C3C"}},"title":{"align":"left","style":{"fontWeight":"bold"}},"subtitle":{"align":"left"},"yAxis":{"gridLineColor":"#FFFFFF","lineColor":"#FFFFFF","minorGridLineColor":"#FFFFFF","tickColor":"#D7D7D8","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"#FFFFFF","borderColor":"#76c0c1","style":{"color":"#000000"}},"legend":{"itemStyle":{"color":"#3C3C3C"},"itemHiddenStyle":{"color":"#606063"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#D7D7D8"}},"drilldown":{"activeAxisLabelStyle":{"color":"#F0F0F3"},"activeDataLabelStyle":{"color":"#F0F0F3"}},"navigation":{"buttonOptions":{"symbolStroke":"#DDDDDD","theme":{"fill":"#505053"}}},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Droid+Sans","debug":false},"evals":[],"jsHooks":[]}</script>
+<pre class="r"><code>data %&gt;%
+ filter(v133!=99)%&gt;%
+  group_by(v101,v012)%&gt;%
+  summarise(pro_ae=mean(v133))%&gt;%
+  hchart(&#39;line&#39;,
+         hcaes(x=v012, y = pro_ae,group = as_label(v101)))%&gt;%
+  hc_add_theme(hc_theme_economist())%&gt;%
+  hc_title(
+    text = &quot;Mean education years by age / Region&quot;
+  ) %&gt;%
+  hc_subtitle(text = &quot;interactive graphics&quot;) %&gt;%
+  # hc_credits(
+  #  enabled = TRUE, text = &quot;Source: SSS&quot;,
+  #  style = list(fontSize = &quot;12px&quot;))%&gt;%
+  hc_yAxis(title = list(text = &quot;Mean  education years&quot;))%&gt;%
+  hc_xAxis(title=list(text=&quot;Age&quot;))%&gt;%
+          #categories = as.character(sort(unique(data$v012))))%&gt;%
+          
+    hc_exporting(enabled = TRUE,
+               filename = &quot;datos&quot;,
+               buttons = list(contextButton = list(menuItems = myMenuItems)))</code></pre>
+<div id="htmlwidget-25e97ae8c31bf1c82fa9" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-25e97ae8c31bf1c82fa9">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"Mean education years by age / Region"},"yAxis":{"title":{"text":"Mean  education years"},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":true,"filename":"datos","buttons":{"contextButton":{"menuItems":["downloadPNG","downloadJPEG","downloadPDF","downloadSVG","printChart"]}}},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"north central","data":[{"v101":1,"v012":15,"pro_ae":6.83116883116883,"x":15,"y":6.83116883116883},{"v101":1,"v012":16,"pro_ae":7.22131147540984,"x":16,"y":7.22131147540984},{"v101":1,"v012":17,"pro_ae":7.92,"x":17,"y":7.92},{"v101":1,"v012":18,"pro_ae":7.80068728522337,"x":18,"y":7.80068728522337},{"v101":1,"v012":19,"pro_ae":8.95566502463054,"x":19,"y":8.95566502463054},{"v101":1,"v012":20,"pro_ae":7.30446927374302,"x":20,"y":7.30446927374302},{"v101":1,"v012":21,"pro_ae":9.22988505747126,"x":21,"y":9.22988505747126},{"v101":1,"v012":22,"pro_ae":8.02092050209205,"x":22,"y":8.02092050209205},{"v101":1,"v012":23,"pro_ae":8.37799043062201,"x":23,"y":8.37799043062201},{"v101":1,"v012":24,"pro_ae":9.56906077348066,"x":24,"y":9.56906077348066},{"v101":1,"v012":25,"pro_ae":6.72413793103448,"x":25,"y":6.72413793103448},{"v101":1,"v012":26,"pro_ae":7.67555555555556,"x":26,"y":7.67555555555556},{"v101":1,"v012":27,"pro_ae":7.95348837209302,"x":27,"y":7.95348837209302},{"v101":1,"v012":28,"pro_ae":7.21484375,"x":28,"y":7.21484375},{"v101":1,"v012":29,"pro_ae":8.93788819875776,"x":29,"y":8.93788819875776},{"v101":1,"v012":30,"pro_ae":6.05434782608696,"x":30,"y":6.05434782608696},{"v101":1,"v012":31,"pro_ae":7.20618556701031,"x":31,"y":7.20618556701031},{"v101":1,"v012":32,"pro_ae":7.07692307692308,"x":32,"y":7.07692307692308},{"v101":1,"v012":33,"pro_ae":8.64462809917355,"x":33,"y":8.64462809917355},{"v101":1,"v012":34,"pro_ae":7.81372549019608,"x":34,"y":7.81372549019608},{"v101":1,"v012":35,"pro_ae":5.49310344827586,"x":35,"y":5.49310344827586},{"v101":1,"v012":36,"pro_ae":7.91752577319588,"x":36,"y":7.91752577319588},{"v101":1,"v012":37,"pro_ae":7.64285714285714,"x":37,"y":7.64285714285714},{"v101":1,"v012":38,"pro_ae":5.92857142857143,"x":38,"y":5.92857142857143},{"v101":1,"v012":39,"pro_ae":7.57534246575342,"x":39,"y":7.57534246575342},{"v101":1,"v012":40,"pro_ae":5.32432432432432,"x":40,"y":5.32432432432432},{"v101":1,"v012":41,"pro_ae":7.09090909090909,"x":41,"y":7.09090909090909},{"v101":1,"v012":42,"pro_ae":6.1025641025641,"x":42,"y":6.1025641025641},{"v101":1,"v012":43,"pro_ae":6.32989690721649,"x":43,"y":6.32989690721649},{"v101":1,"v012":44,"pro_ae":6.30188679245283,"x":44,"y":6.30188679245283},{"v101":1,"v012":45,"pro_ae":5.09929078014184,"x":45,"y":5.09929078014184},{"v101":1,"v012":46,"pro_ae":6.20634920634921,"x":46,"y":6.20634920634921},{"v101":1,"v012":47,"pro_ae":6.23636363636364,"x":47,"y":6.23636363636364},{"v101":1,"v012":48,"pro_ae":4.38532110091743,"x":48,"y":4.38532110091743},{"v101":1,"v012":49,"pro_ae":5.25316455696202,"x":49,"y":5.25316455696202}],"type":"line"},{"name":"north east","data":[{"v101":2,"v012":15,"pro_ae":4.0125786163522,"x":15,"y":4.0125786163522},{"v101":2,"v012":16,"pro_ae":4.91269841269841,"x":16,"y":4.91269841269841},{"v101":2,"v012":17,"pro_ae":4.42448979591837,"x":17,"y":4.42448979591837},{"v101":2,"v012":18,"pro_ae":3.9512987012987,"x":18,"y":3.9512987012987},{"v101":2,"v012":19,"pro_ae":5.35675675675676,"x":19,"y":5.35675675675676},{"v101":2,"v012":20,"pro_ae":3.95127118644068,"x":20,"y":3.95127118644068},{"v101":2,"v012":21,"pro_ae":5.26530612244898,"x":21,"y":5.26530612244898},{"v101":2,"v012":22,"pro_ae":4.08365019011407,"x":22,"y":4.08365019011407},{"v101":2,"v012":23,"pro_ae":5.31491712707182,"x":23,"y":5.31491712707182},{"v101":2,"v012":24,"pro_ae":4.20253164556962,"x":24,"y":4.20253164556962},{"v101":2,"v012":25,"pro_ae":3.1,"x":25,"y":3.1},{"v101":2,"v012":26,"pro_ae":3.56,"x":26,"y":3.56},{"v101":2,"v012":27,"pro_ae":4.11894273127753,"x":27,"y":4.11894273127753},{"v101":2,"v012":28,"pro_ae":4.248,"x":28,"y":4.248},{"v101":2,"v012":29,"pro_ae":3.94488188976378,"x":29,"y":3.94488188976378},{"v101":2,"v012":30,"pro_ae":2.39051918735892,"x":30,"y":2.39051918735892},{"v101":2,"v012":31,"pro_ae":3.98684210526316,"x":31,"y":3.98684210526316},{"v101":2,"v012":32,"pro_ae":3.05142857142857,"x":32,"y":3.05142857142857},{"v101":2,"v012":33,"pro_ae":2.84684684684685,"x":33,"y":2.84684684684685},{"v101":2,"v012":34,"pro_ae":4.27956989247312,"x":34,"y":4.27956989247312},{"v101":2,"v012":35,"pro_ae":2.13505747126437,"x":35,"y":2.13505747126437},{"v101":2,"v012":36,"pro_ae":4.53913043478261,"x":36,"y":4.53913043478261},{"v101":2,"v012":37,"pro_ae":2.79338842975207,"x":37,"y":2.79338842975207},{"v101":2,"v012":38,"pro_ae":2.60283687943262,"x":38,"y":2.60283687943262},{"v101":2,"v012":39,"pro_ae":3.65853658536585,"x":39,"y":3.65853658536585},{"v101":2,"v012":40,"pro_ae":1.77385159010601,"x":40,"y":1.77385159010601},{"v101":2,"v012":41,"pro_ae":2.57692307692308,"x":41,"y":2.57692307692308},{"v101":2,"v012":42,"pro_ae":3.41747572815534,"x":42,"y":3.41747572815534},{"v101":2,"v012":43,"pro_ae":3.13414634146341,"x":43,"y":3.13414634146341},{"v101":2,"v012":44,"pro_ae":2.92307692307692,"x":44,"y":2.92307692307692},{"v101":2,"v012":45,"pro_ae":2.22222222222222,"x":45,"y":2.22222222222222},{"v101":2,"v012":46,"pro_ae":3.31168831168831,"x":46,"y":3.31168831168831},{"v101":2,"v012":47,"pro_ae":3.2,"x":47,"y":3.2},{"v101":2,"v012":48,"pro_ae":1.33333333333333,"x":48,"y":1.33333333333333},{"v101":2,"v012":49,"pro_ae":1.51666666666667,"x":49,"y":1.51666666666667}],"type":"line"},{"name":"north west","data":[{"v101":3,"v012":15,"pro_ae":3.40116279069767,"x":15,"y":3.40116279069767},{"v101":3,"v012":16,"pro_ae":4.00862068965517,"x":16,"y":4.00862068965517},{"v101":3,"v012":17,"pro_ae":3.56969696969697,"x":17,"y":3.56969696969697},{"v101":3,"v012":18,"pro_ae":3.29233870967742,"x":18,"y":3.29233870967742},{"v101":3,"v012":19,"pro_ae":4.53389830508475,"x":19,"y":4.53389830508475},{"v101":3,"v012":20,"pro_ae":2.1523178807947,"x":20,"y":2.1523178807947},{"v101":3,"v012":21,"pro_ae":3.96174863387978,"x":21,"y":3.96174863387978},{"v101":3,"v012":22,"pro_ae":2.95625,"x":22,"y":2.95625},{"v101":3,"v012":23,"pro_ae":3.55,"x":23,"y":3.55},{"v101":3,"v012":24,"pro_ae":2.82658959537572,"x":24,"y":2.82658959537572},{"v101":3,"v012":25,"pro_ae":2.00611246943765,"x":25,"y":2.00611246943765},{"v101":3,"v012":26,"pro_ae":2.14953271028037,"x":26,"y":2.14953271028037},{"v101":3,"v012":27,"pro_ae":2.30483271375465,"x":27,"y":2.30483271375465},{"v101":3,"v012":28,"pro_ae":2.22796352583587,"x":28,"y":2.22796352583587},{"v101":3,"v012":29,"pro_ae":2.11940298507463,"x":29,"y":2.11940298507463},{"v101":3,"v012":30,"pro_ae":1.74230769230769,"x":30,"y":1.74230769230769},{"v101":3,"v012":31,"pro_ae":3.1063829787234,"x":31,"y":3.1063829787234},{"v101":3,"v012":32,"pro_ae":2.5969387755102,"x":32,"y":2.5969387755102},{"v101":3,"v012":33,"pro_ae":1.64779874213836,"x":33,"y":1.64779874213836},{"v101":3,"v012":34,"pro_ae":1.93203883495146,"x":34,"y":1.93203883495146},{"v101":3,"v012":35,"pro_ae":1.47463768115942,"x":35,"y":1.47463768115942},{"v101":3,"v012":36,"pro_ae":1.88732394366197,"x":36,"y":1.88732394366197},{"v101":3,"v012":37,"pro_ae":2.8273381294964,"x":37,"y":2.8273381294964},{"v101":3,"v012":38,"pro_ae":2.01382488479263,"x":38,"y":2.01382488479263},{"v101":3,"v012":39,"pro_ae":2.16666666666667,"x":39,"y":2.16666666666667},{"v101":3,"v012":40,"pro_ae":1.12825278810409,"x":40,"y":1.12825278810409},{"v101":3,"v012":41,"pro_ae":1.71875,"x":41,"y":1.71875},{"v101":3,"v012":42,"pro_ae":1.98473282442748,"x":42,"y":1.98473282442748},{"v101":3,"v012":43,"pro_ae":2.19047619047619,"x":43,"y":2.19047619047619},{"v101":3,"v012":44,"pro_ae":1.56666666666667,"x":44,"y":1.56666666666667},{"v101":3,"v012":45,"pro_ae":0.933130699088146,"x":45,"y":0.933130699088146},{"v101":3,"v012":46,"pro_ae":0.82,"x":46,"y":0.82},{"v101":3,"v012":47,"pro_ae":1.34285714285714,"x":47,"y":1.34285714285714},{"v101":3,"v012":48,"pro_ae":0.95260663507109,"x":48,"y":0.95260663507109},{"v101":3,"v012":49,"pro_ae":0.859903381642512,"x":49,"y":0.859903381642512}],"type":"line"},{"name":"south east","data":[{"v101":4,"v012":15,"pro_ae":8.22282608695652,"x":15,"y":8.22282608695652},{"v101":4,"v012":16,"pro_ae":8.64242424242424,"x":16,"y":8.64242424242424},{"v101":4,"v012":17,"pro_ae":9.70520231213873,"x":17,"y":9.70520231213873},{"v101":4,"v012":18,"pro_ae":10.1791044776119,"x":18,"y":10.1791044776119},{"v101":4,"v012":19,"pro_ae":10.6463414634146,"x":19,"y":10.6463414634146},{"v101":4,"v012":20,"pro_ae":10.3823529411765,"x":20,"y":10.3823529411765},{"v101":4,"v012":21,"pro_ae":11,"x":21,"y":11},{"v101":4,"v012":22,"pro_ae":11.0131578947368,"x":22,"y":11.0131578947368},{"v101":4,"v012":23,"pro_ae":11.2093023255814,"x":23,"y":11.2093023255814},{"v101":4,"v012":24,"pro_ae":11.2573529411765,"x":24,"y":11.2573529411765},{"v101":4,"v012":25,"pro_ae":10.7936507936508,"x":25,"y":10.7936507936508},{"v101":4,"v012":26,"pro_ae":11.3333333333333,"x":26,"y":11.3333333333333},{"v101":4,"v012":27,"pro_ae":11.3698630136986,"x":27,"y":11.3698630136986},{"v101":4,"v012":28,"pro_ae":10.9057971014493,"x":28,"y":10.9057971014493},{"v101":4,"v012":29,"pro_ae":11.2137404580153,"x":29,"y":11.2137404580153},{"v101":4,"v012":30,"pro_ae":9.60109289617486,"x":30,"y":9.60109289617486},{"v101":4,"v012":31,"pro_ae":11.1609195402299,"x":31,"y":11.1609195402299},{"v101":4,"v012":32,"pro_ae":9.74528301886792,"x":32,"y":9.74528301886792},{"v101":4,"v012":33,"pro_ae":10.0185185185185,"x":33,"y":10.0185185185185},{"v101":4,"v012":34,"pro_ae":10.6222222222222,"x":34,"y":10.6222222222222},{"v101":4,"v012":35,"pro_ae":9.15702479338843,"x":35,"y":9.15702479338843},{"v101":4,"v012":36,"pro_ae":10.314606741573,"x":36,"y":10.314606741573},{"v101":4,"v012":37,"pro_ae":9.19230769230769,"x":37,"y":9.19230769230769},{"v101":4,"v012":38,"pro_ae":9.52475247524752,"x":38,"y":9.52475247524752},{"v101":4,"v012":39,"pro_ae":9.21875,"x":39,"y":9.21875},{"v101":4,"v012":40,"pro_ae":7.43786982248521,"x":40,"y":7.43786982248521},{"v101":4,"v012":41,"pro_ae":8.25675675675676,"x":41,"y":8.25675675675676},{"v101":4,"v012":42,"pro_ae":7.65420560747664,"x":42,"y":7.65420560747664},{"v101":4,"v012":43,"pro_ae":7.12,"x":43,"y":7.12},{"v101":4,"v012":44,"pro_ae":7.69565217391304,"x":44,"y":7.69565217391304},{"v101":4,"v012":45,"pro_ae":6.79166666666667,"x":45,"y":6.79166666666667},{"v101":4,"v012":46,"pro_ae":7.57142857142857,"x":46,"y":7.57142857142857},{"v101":4,"v012":47,"pro_ae":5.6027397260274,"x":47,"y":5.6027397260274},{"v101":4,"v012":48,"pro_ae":6.76146788990826,"x":48,"y":6.76146788990826},{"v101":4,"v012":49,"pro_ae":5.54128440366972,"x":49,"y":5.54128440366972}],"type":"line"},{"name":"south south","data":[{"v101":5,"v012":15,"pro_ae":7.97429906542056,"x":15,"y":7.97429906542056},{"v101":5,"v012":16,"pro_ae":8.87548638132296,"x":16,"y":8.87548638132296},{"v101":5,"v012":17,"pro_ae":9.46948356807512,"x":17,"y":9.46948356807512},{"v101":5,"v012":18,"pro_ae":10.0632411067194,"x":18,"y":10.0632411067194},{"v101":5,"v012":19,"pro_ae":10.3555555555556,"x":19,"y":10.3555555555556},{"v101":5,"v012":20,"pro_ae":9.86446886446886,"x":20,"y":9.86446886446886},{"v101":5,"v012":21,"pro_ae":9.975,"x":21,"y":9.975},{"v101":5,"v012":22,"pro_ae":10.176724137931,"x":22,"y":10.176724137931},{"v101":5,"v012":23,"pro_ae":10.4545454545455,"x":23,"y":10.4545454545455},{"v101":5,"v012":24,"pro_ae":10.8186813186813,"x":24,"y":10.8186813186813},{"v101":5,"v012":25,"pro_ae":9.71784232365145,"x":25,"y":9.71784232365145},{"v101":5,"v012":26,"pro_ae":10.8133971291866,"x":26,"y":10.8133971291866},{"v101":5,"v012":27,"pro_ae":10.6719576719577,"x":27,"y":10.6719576719577},{"v101":5,"v012":28,"pro_ae":9.79039301310044,"x":28,"y":9.79039301310044},{"v101":5,"v012":29,"pro_ae":10.2578616352201,"x":29,"y":10.2578616352201},{"v101":5,"v012":30,"pro_ae":9.09059233449477,"x":30,"y":9.09059233449477},{"v101":5,"v012":31,"pro_ae":9.52427184466019,"x":31,"y":9.52427184466019},{"v101":5,"v012":32,"pro_ae":8.96894409937888,"x":32,"y":8.96894409937888},{"v101":5,"v012":33,"pro_ae":9.3125,"x":33,"y":9.3125},{"v101":5,"v012":34,"pro_ae":9.7962962962963,"x":34,"y":9.7962962962963},{"v101":5,"v012":35,"pro_ae":7.81012658227848,"x":35,"y":7.81012658227848},{"v101":5,"v012":36,"pro_ae":8.72307692307692,"x":36,"y":8.72307692307692},{"v101":5,"v012":37,"pro_ae":7.85585585585586,"x":37,"y":7.85585585585586},{"v101":5,"v012":38,"pro_ae":8.08805031446541,"x":38,"y":8.08805031446541},{"v101":5,"v012":39,"pro_ae":7.86,"x":39,"y":7.86},{"v101":5,"v012":40,"pro_ae":6.25423728813559,"x":40,"y":6.25423728813559},{"v101":5,"v012":41,"pro_ae":7.7887323943662,"x":41,"y":7.7887323943662},{"v101":5,"v012":42,"pro_ae":7.54166666666667,"x":42,"y":7.54166666666667},{"v101":5,"v012":43,"pro_ae":7.82828282828283,"x":43,"y":7.82828282828283},{"v101":5,"v012":44,"pro_ae":9.140625,"x":44,"y":9.140625},{"v101":5,"v012":45,"pro_ae":6.97101449275362,"x":45,"y":6.97101449275362},{"v101":5,"v012":46,"pro_ae":7.90277777777778,"x":46,"y":7.90277777777778},{"v101":5,"v012":47,"pro_ae":7.39473684210526,"x":47,"y":7.39473684210526},{"v101":5,"v012":48,"pro_ae":6.86086956521739,"x":48,"y":6.86086956521739},{"v101":5,"v012":49,"pro_ae":7.05042016806723,"x":49,"y":7.05042016806723}],"type":"line"},{"name":"south west","data":[{"v101":6,"v012":15,"pro_ae":8.2972972972973,"x":15,"y":8.2972972972973},{"v101":6,"v012":16,"pro_ae":9.45454545454546,"x":16,"y":9.45454545454546},{"v101":6,"v012":17,"pro_ae":10.2037914691943,"x":17,"y":10.2037914691943},{"v101":6,"v012":18,"pro_ae":10.2654028436019,"x":18,"y":10.2654028436019},{"v101":6,"v012":19,"pro_ae":10.5027027027027,"x":19,"y":10.5027027027027},{"v101":6,"v012":20,"pro_ae":9.74074074074074,"x":20,"y":9.74074074074074},{"v101":6,"v012":21,"pro_ae":11.0571428571429,"x":21,"y":11.0571428571429},{"v101":6,"v012":22,"pro_ae":11.2265193370166,"x":22,"y":11.2265193370166},{"v101":6,"v012":23,"pro_ae":11.2,"x":23,"y":11.2},{"v101":6,"v012":24,"pro_ae":11.0188679245283,"x":24,"y":11.0188679245283},{"v101":6,"v012":25,"pro_ae":9.46188340807175,"x":25,"y":9.46188340807175},{"v101":6,"v012":26,"pro_ae":11.1436781609195,"x":26,"y":11.1436781609195},{"v101":6,"v012":27,"pro_ae":10.6134969325153,"x":27,"y":10.6134969325153},{"v101":6,"v012":28,"pro_ae":10.071129707113,"x":28,"y":10.071129707113},{"v101":6,"v012":29,"pro_ae":10.8418367346939,"x":29,"y":10.8418367346939},{"v101":6,"v012":30,"pro_ae":9.03472222222222,"x":30,"y":9.03472222222222},{"v101":6,"v012":31,"pro_ae":10.9782608695652,"x":31,"y":10.9782608695652},{"v101":6,"v012":32,"pro_ae":10.5025906735751,"x":32,"y":10.5025906735751},{"v101":6,"v012":33,"pro_ae":10.2208588957055,"x":33,"y":10.2208588957055},{"v101":6,"v012":34,"pro_ae":10.568,"x":34,"y":10.568},{"v101":6,"v012":35,"pro_ae":8.39929328621908,"x":35,"y":8.39929328621908},{"v101":6,"v012":36,"pro_ae":9.98039215686275,"x":36,"y":9.98039215686275},{"v101":6,"v012":37,"pro_ae":10.3235294117647,"x":37,"y":10.3235294117647},{"v101":6,"v012":38,"pro_ae":8.70945945945946,"x":38,"y":8.70945945945946},{"v101":6,"v012":39,"pro_ae":10.4102564102564,"x":39,"y":10.4102564102564},{"v101":6,"v012":40,"pro_ae":7.96825396825397,"x":40,"y":7.96825396825397},{"v101":6,"v012":41,"pro_ae":10.1,"x":41,"y":10.1},{"v101":6,"v012":42,"pro_ae":8.97761194029851,"x":42,"y":8.97761194029851},{"v101":6,"v012":43,"pro_ae":9.77678571428571,"x":43,"y":9.77678571428571},{"v101":6,"v012":44,"pro_ae":10.1341463414634,"x":44,"y":10.1341463414634},{"v101":6,"v012":45,"pro_ae":8.11299435028249,"x":45,"y":8.11299435028249},{"v101":6,"v012":46,"pro_ae":8.74666666666667,"x":46,"y":8.74666666666667},{"v101":6,"v012":47,"pro_ae":10.0277777777778,"x":47,"y":10.0277777777778},{"v101":6,"v012":48,"pro_ae":6.35,"x":48,"y":6.35},{"v101":6,"v012":49,"pro_ae":7.39370078740157,"x":49,"y":7.39370078740157}],"type":"line"}],"xAxis":{"type":"linear","title":{"text":"Age"}},"subtitle":{"text":"interactive graphics"}},"theme":{"colors":["#6794a7","#014d64","#76c0c1","#01a2d9","#7ad2f6","#00887d","#adadad","#7bd3f6","#7c260b","#ee8f71","#76c0c1","#a18376"],"chart":{"backgroundColor":"#d5e4eb","style":{"fontFamily":"Droid Sans","color":"#3C3C3C"}},"title":{"align":"left","style":{"fontWeight":"bold"}},"subtitle":{"align":"left"},"yAxis":{"gridLineColor":"#FFFFFF","lineColor":"#FFFFFF","minorGridLineColor":"#FFFFFF","tickColor":"#D7D7D8","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"#FFFFFF","borderColor":"#76c0c1","style":{"color":"#000000"}},"legend":{"itemStyle":{"color":"#3C3C3C"},"itemHiddenStyle":{"color":"#606063"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#D7D7D8"}},"drilldown":{"activeAxisLabelStyle":{"color":"#F0F0F3"},"activeDataLabelStyle":{"color":"#F0F0F3"}},"navigation":{"buttonOptions":{"symbolStroke":"#DDDDDD","theme":{"fill":"#505053"}}},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Droid+Sans","debug":false},"evals":[],"jsHooks":[]}</script>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Geopolitical_Zones_of_Nigeria.svg/1024px-Geopolitical_Zones_of_Nigeria.svg.png" width="100%" /></p>
+<pre class="r"><code>data %&gt;%
+ filter(v133!=99)%&gt;%
+  mutate(grupos=ifelse(v101==3,&#39;Treatment&#39;,&#39;Control&#39;))%&gt;%
+  group_by(grupos,v012)%&gt;%
+  summarise(pro_ae=mean(v133))%&gt;%
+  hchart(&#39;line&#39;,
+         hcaes(x=v012, y = pro_ae, group = grupos))%&gt;%
+  hc_add_theme(hc_theme_economist())%&gt;%
+  hc_title(
+    text = &quot;Mean education years by age / Treatment-Control&quot;
+  ) %&gt;%
+  hc_subtitle(text = &quot;interactive graphics&quot;) %&gt;%
+  # hc_credits(
+  #  enabled = TRUE, text = &quot;Source: SSS&quot;,
+  #  style = list(fontSize = &quot;12px&quot;))%&gt;%
+  hc_yAxis(title = list(text = &quot;Mean  education years&quot;))%&gt;%
+  hc_xAxis(plotLines = list(list(value=28,color=&quot;red&quot;,width=2 )))%&gt;%
+  hc_xAxis(title=list(text=&quot;Age&quot;))%&gt;%
+          #categories = as.character(sort(unique(data$v012))))%&gt;%
+          
+    hc_exporting(enabled = TRUE,
+               filename = &quot;datos&quot;,
+               buttons = list(contextButton = list(menuItems = myMenuItems)))</code></pre>
+<div id="htmlwidget-9ca9df96b6462d21a704" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9ca9df96b6462d21a704">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"Mean education years by age / Treatment-Control"},"yAxis":{"title":{"text":"Mean  education years"},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":true,"filename":"datos","buttons":{"contextButton":{"menuItems":["downloadPNG","downloadJPEG","downloadPDF","downloadSVG","printChart"]}}},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}}},"series":[{"name":"Control","data":[{"grupos":"Control","v012":15,"pro_ae":7.01564537157758,"x":15,"y":7.01564537157758},{"grupos":"Control","v012":16,"pro_ae":7.73803307223673,"x":16,"y":7.73803307223673},{"grupos":"Control","v012":17,"pro_ae":8.16776007497657,"x":17,"y":8.16776007497657},{"grupos":"Control","v012":18,"pro_ae":8.10522151898734,"x":18,"y":8.10522151898734},{"grupos":"Control","v012":19,"pro_ae":9.17671517671518,"x":19,"y":9.17671517671518},{"grupos":"Control","v012":20,"pro_ae":7.48194353250164,"x":20,"y":7.48194353250164},{"grupos":"Control","v012":21,"pro_ae":9.30653266331658,"x":21,"y":9.30653266331658},{"grupos":"Control","v012":22,"pro_ae":8.4892221180881,"x":22,"y":8.4892221180881},{"grupos":"Control","v012":23,"pro_ae":9.11228070175439,"x":23,"y":9.11228070175439},{"grupos":"Control","v012":24,"pro_ae":9.37254901960784,"x":24,"y":9.37254901960784},{"grupos":"Control","v012":25,"pro_ae":7.03578528827038,"x":25,"y":7.03578528827038},{"grupos":"Control","v012":26,"pro_ae":8.84137191854234,"x":26,"y":8.84137191854234},{"grupos":"Control","v012":27,"pro_ae":8.56595744680851,"x":27,"y":8.56595744680851},{"grupos":"Control","v012":28,"pro_ae":8.15017985611511,"x":28,"y":8.15017985611511},{"grupos":"Control","v012":29,"pro_ae":9.25710594315245,"x":29,"y":9.25710594315245},{"grupos":"Control","v012":30,"pro_ae":6.53601019757807,"x":30,"y":6.53601019757807},{"grupos":"Control","v012":31,"pro_ae":8.92015968063872,"x":31,"y":8.92015968063872},{"grupos":"Control","v012":32,"pro_ae":7.75373134328358,"x":32,"y":7.75373134328358},{"grupos":"Control","v012":33,"pro_ae":8.42503863987635,"x":33,"y":8.42503863987635},{"grupos":"Control","v012":34,"pro_ae":8.74517374517374,"x":34,"y":8.74517374517374},{"grupos":"Control","v012":35,"pro_ae":5.99843627834245,"x":35,"y":5.99843627834245},{"grupos":"Control","v012":36,"pro_ae":8.33732876712329,"x":36,"y":8.33732876712329},{"grupos":"Control","v012":37,"pro_ae":7.39655172413793,"x":37,"y":7.39655172413793},{"grupos":"Control","v012":38,"pro_ae":6.87082728592163,"x":38,"y":6.87082728592163},{"grupos":"Control","v012":39,"pro_ae":7.9957264957265,"x":39,"y":7.9957264957265},{"grupos":"Control","v012":40,"pro_ae":5.34038461538462,"x":40,"y":5.34038461538462},{"grupos":"Control","v012":41,"pro_ae":7.56318681318681,"x":41,"y":7.56318681318681},{"grupos":"Control","v012":42,"pro_ae":6.87263339070568,"x":42,"y":6.87263339070568},{"grupos":"Control","v012":43,"pro_ae":7.04301075268817,"x":43,"y":7.04301075268817},{"grupos":"Control","v012":44,"pro_ae":7.42042042042042,"x":44,"y":7.42042042042042},{"grupos":"Control","v012":45,"pro_ae":5.57070707070707,"x":45,"y":5.57070707070707},{"grupos":"Control","v012":46,"pro_ae":6.72549019607843,"x":46,"y":6.72549019607843},{"grupos":"Control","v012":47,"pro_ae":6.73619631901841,"x":47,"y":6.73619631901841},{"grupos":"Control","v012":48,"pro_ae":5.12631578947368,"x":48,"y":5.12631578947368},{"grupos":"Control","v012":49,"pro_ae":5.37725631768953,"x":49,"y":5.37725631768953}],"type":"line"},{"name":"Treatment","data":[{"grupos":"Treatment","v012":15,"pro_ae":3.40116279069767,"x":15,"y":3.40116279069767},{"grupos":"Treatment","v012":16,"pro_ae":4.00862068965517,"x":16,"y":4.00862068965517},{"grupos":"Treatment","v012":17,"pro_ae":3.56969696969697,"x":17,"y":3.56969696969697},{"grupos":"Treatment","v012":18,"pro_ae":3.29233870967742,"x":18,"y":3.29233870967742},{"grupos":"Treatment","v012":19,"pro_ae":4.53389830508475,"x":19,"y":4.53389830508475},{"grupos":"Treatment","v012":20,"pro_ae":2.1523178807947,"x":20,"y":2.1523178807947},{"grupos":"Treatment","v012":21,"pro_ae":3.96174863387978,"x":21,"y":3.96174863387978},{"grupos":"Treatment","v012":22,"pro_ae":2.95625,"x":22,"y":2.95625},{"grupos":"Treatment","v012":23,"pro_ae":3.55,"x":23,"y":3.55},{"grupos":"Treatment","v012":24,"pro_ae":2.82658959537572,"x":24,"y":2.82658959537572},{"grupos":"Treatment","v012":25,"pro_ae":2.00611246943765,"x":25,"y":2.00611246943765},{"grupos":"Treatment","v012":26,"pro_ae":2.14953271028037,"x":26,"y":2.14953271028037},{"grupos":"Treatment","v012":27,"pro_ae":2.30483271375465,"x":27,"y":2.30483271375465},{"grupos":"Treatment","v012":28,"pro_ae":2.22796352583587,"x":28,"y":2.22796352583587},{"grupos":"Treatment","v012":29,"pro_ae":2.11940298507463,"x":29,"y":2.11940298507463},{"grupos":"Treatment","v012":30,"pro_ae":1.74230769230769,"x":30,"y":1.74230769230769},{"grupos":"Treatment","v012":31,"pro_ae":3.1063829787234,"x":31,"y":3.1063829787234},{"grupos":"Treatment","v012":32,"pro_ae":2.5969387755102,"x":32,"y":2.5969387755102},{"grupos":"Treatment","v012":33,"pro_ae":1.64779874213836,"x":33,"y":1.64779874213836},{"grupos":"Treatment","v012":34,"pro_ae":1.93203883495146,"x":34,"y":1.93203883495146},{"grupos":"Treatment","v012":35,"pro_ae":1.47463768115942,"x":35,"y":1.47463768115942},{"grupos":"Treatment","v012":36,"pro_ae":1.88732394366197,"x":36,"y":1.88732394366197},{"grupos":"Treatment","v012":37,"pro_ae":2.8273381294964,"x":37,"y":2.8273381294964},{"grupos":"Treatment","v012":38,"pro_ae":2.01382488479263,"x":38,"y":2.01382488479263},{"grupos":"Treatment","v012":39,"pro_ae":2.16666666666667,"x":39,"y":2.16666666666667},{"grupos":"Treatment","v012":40,"pro_ae":1.12825278810409,"x":40,"y":1.12825278810409},{"grupos":"Treatment","v012":41,"pro_ae":1.71875,"x":41,"y":1.71875},{"grupos":"Treatment","v012":42,"pro_ae":1.98473282442748,"x":42,"y":1.98473282442748},{"grupos":"Treatment","v012":43,"pro_ae":2.19047619047619,"x":43,"y":2.19047619047619},{"grupos":"Treatment","v012":44,"pro_ae":1.56666666666667,"x":44,"y":1.56666666666667},{"grupos":"Treatment","v012":45,"pro_ae":0.933130699088146,"x":45,"y":0.933130699088146},{"grupos":"Treatment","v012":46,"pro_ae":0.82,"x":46,"y":0.82},{"grupos":"Treatment","v012":47,"pro_ae":1.34285714285714,"x":47,"y":1.34285714285714},{"grupos":"Treatment","v012":48,"pro_ae":0.95260663507109,"x":48,"y":0.95260663507109},{"grupos":"Treatment","v012":49,"pro_ae":0.859903381642512,"x":49,"y":0.859903381642512}],"type":"line"}],"xAxis":{"type":"linear","title":{"text":"Age"},"plotLines":[{"value":28,"color":"red","width":2}]},"subtitle":{"text":"interactive graphics"}},"theme":{"colors":["#6794a7","#014d64","#76c0c1","#01a2d9","#7ad2f6","#00887d","#adadad","#7bd3f6","#7c260b","#ee8f71","#76c0c1","#a18376"],"chart":{"backgroundColor":"#d5e4eb","style":{"fontFamily":"Droid Sans","color":"#3C3C3C"}},"title":{"align":"left","style":{"fontWeight":"bold"}},"subtitle":{"align":"left"},"yAxis":{"gridLineColor":"#FFFFFF","lineColor":"#FFFFFF","minorGridLineColor":"#FFFFFF","tickColor":"#D7D7D8","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"#FFFFFF","borderColor":"#76c0c1","style":{"color":"#000000"}},"legend":{"itemStyle":{"color":"#3C3C3C"},"itemHiddenStyle":{"color":"#606063"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#D7D7D8"}},"drilldown":{"activeAxisLabelStyle":{"color":"#F0F0F3"},"activeDataLabelStyle":{"color":"#F0F0F3"}},"navigation":{"buttonOptions":{"symbolStroke":"#DDDDDD","theme":{"fill":"#505053"}}},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"Droid+Sans","debug":false},"evals":[],"jsHooks":[]}</script>
+</div>
+
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiRmluYWwgRXhhbSIKYXV0aG9yOiAiUmFmYWVsIE1hcnTDrW5leiBNYXJ0w61uZXoiCm91dHB1dDogCiAgaHRtbF9kb2N1bWVudDoKICAgIHRvYzogdHJ1ZQogICAgdG9jX2Zsb2F0OiB0cnVlCiAgICAjbnVtYmVyX3NlY3Rpb25zOiB0cnVlCiAgICBjb2RlX2Rvd25sb2FkOiB0cnVlCiAgICBjb2RlX2ZvbGRpbmc6IHNob3cKICAgIGZpZ19jYXB0aW9uOiB0cnVlCi0tLQoKYGBge3Igc2V0dXAsIGluY2x1ZGU9RkFMU0V9CmtuaXRyOjpvcHRzX2NodW5rJHNldChlY2hvID0gVFJVRSwgbWVzc2FnZSA9IEZBTFNFKQpgYGAKCgoKIyBRMQoKPGRpdiBjbGFzcz0ianVtYm90cm9uIj4KICAgPGRpdiBpZD0ianVzdGlmaWNhciI+CiAgPHAgY2xhc3M9ImxlYWQiPkNvbnNpZGVyIHRoZSBmb2xsb3dpbmcgcG9saWN5IGV4cGVyaW1lbnQuICBOaWdlcmlhIGRlY2lkZXMgdG8gaW1wbGVtZW50IGEgcHJvZ3JhbSB0byBlbmNvdXJhZ2Ugc2Nob29saW5nIG9mIGdpcmxzIGluIHRoZSBOb3J0aCBXZXN0ZXJuIHJlZ2lvbiBvZiB0aGUgY291bnRyeSBzdGFydGluZyB0aGV5ZWFyIDE5OTAuICBUaGUgZ292ZXJubWVudCBpcyBub3cgaW50ZXJlc3RlZCBpbiB1bmRlcnN0YW5kaW5nIHdoZXRoZXIgdGhlIHByb2dyYW0gd2FzICBzdWNjZXNzZnVsICBpbiAgYWNoaWV2aW5nICBpdHMgIG9iamVjdGl2ZSAgb2YgIGluY3JlYXNpbmcgIGVkdWNhdGlvbmFsICBhdHRhaW5tZW50ICBvZiAgdGhlIGdpcmxzLiAgIFBsZWFzZSAgZG93bmxvYWQgIHRoZSAgLmNzdiAgZmlsZSAgcHJvdmlkZWQgIGF0ICB0aGUgIGZvbGxvd2luZyAgbGluayAgYmVsb3cgIG9uICB3b21lbiBvdXRjb21lcyAgZnJvbSAgTmlnZXJpYS4gICBUaGUgIGRhdGEgIGNvbnRhaW5zICBpbmZvcm1hdGlvbiAgb24gIGFnZSwgIGV0aG5pY2l0eSwgIHJlZ2lvbiAgb2YgcmVzaWRlbmNlIGFuZCBlZHVjYXRpb25hbCBhdHRhaW5tZW50LjwvcD4KICA8L2Rpdj4KPC9kaXY+CgojIyBhKQo8ZGl2IGNsYXNzPSJqdW1ib3Ryb24iPgogICA8ZGl2IGlkPSJqdXN0aWZpY2FyIj4KICA8cD5QbGVhc2Ugc3VnZ2VzdCBhbiBpZGVudGlmaWNhdGlvbiBzdHJhdGVneSB0byBiZSBhYmxlIHRvIGV2YWx1YXRlIHRoZSBpbXBhY3Qgb2YgdGhlIHByb2dyYW0gYmFzZWQgb24gdGhlIGRhdGEgcHJvdmlkZWQ7IHBsZWFzZSBjbGVhcmx5IG91dGxpbmUgdGhlIGdyb3VwcyB5b3UgaW50ZW5kIHRvIGNvbXBhcmU7ICB0aGUgaWRlbnRpZnlpbmcgYXNzdW1wdGlvbiwgIGFzIHdlbGwgYXMgdGhlIGVzdGltYXRpb24gZXF1YXRpb24uICg4IHBvaW50cykuPC9wPgogIDwvZGl2Pgo8L2Rpdj4KCjxkaXYgaWQgPSAicmVzcHVlc3RhIj4KClRoZSBhcHBlbmRpeCBRMSBzaG93cyBleHBsb3JhdG9yeSBhbmFseXNpcyBvZiB0aGUgdmFyaWFibGVzIGFuZCB0aGUgY29ycmVzcG9uZGluZyBjb2RlcywgdGhpcyBpcyBhdCB0aGUgZW5kIG9mIHRoZSBkb2N1bWVudC4KCkRpZmZlcmVuY2UtaW4tZGlmZmVyZW5jZXMgKERpRCkgYXBwcm9hY2hlcyBhcmUgYXBwbGllZCBpbiBzaXR1YXRpb25zIHdoZW4gY2VydGFpbiBncm91cHMgYXJlIGV4cG9zZWQgdG8gYSB0cmVhdG1lbnQgYW5kIG90aGVycyBhcmUgbm90LCB0aHVzIEkgdXNlIGl0LiAKClRoZSBpZGVudGlmaWNhdGlvbiBhc3N1bXB0aW9uIG9mIHRoZSBEaUQgYXBwcm9hY2ggaXMgdGhhdCB0aGUgZ3JvdXAtc3BlY2lmaWMgdHJlbmRzIGluIHRoZSBvdXRjb21lIG9mIGludGVyZXN0IHdvdWxkIGJlIGlkZW50aWNhbCBpbiB0aGUgYWJzZW5jZSBvZiB0cmVhdG1lbnQuCgpJdCBzZWVtcyB0aGF0IHdvbWVuIGxpdmluZyBpbiB0aGUgbm9ydGgtd2VzdCByZWdpb24gaGF2ZSBhIGxvd2VyIGxldmVsIG9mIGVkdWNhdGlvbgoKYGBge3IsIGVjaG89RkFMU0UsIG91dC53aWR0aD0iMTAwJSJ9CmtuaXRyOjppbmNsdWRlX2dyYXBoaWNzKCJJbWFnZW5lcy9lc3RhLnBuZyIpCmBgYApUaGUgYWdlIHRvIHN0YXJ0IGVkdWNhdGlvbiBpbiBOaWdlcmlhIGlzIDUgeWVhcnMgWzFdLiBTbyBpbiAyMDEzIGFsbCB3b21lbiBsaXZpbmcgaW4gdGhlIG5vcnRoLXdlc3QgcmVnaW9uIGFnZWQgMjggYW5kIHVuZGVyIHdlcmUgdHJlYXRlZCwgYW5kIHdvbWVuIG92ZXIgMjggd2VyZSBub3QgdHJlYXRlZC4gV2hpbGUgd29tZW4gbGl2aW5nIGluIHRoZSBvdGhlciByZWdpb25zIGhhdmUgbmV2ZXIgYmVlbiB0cmVhdGVkLiBUaGUgZXN0aW1hdGlvbiBlcXVhdGlvbgoKCgokJApZX3tpfT1cYWxwaGErXGxhbWJkYVxiZXRhX3t0fStcZ2FtbWFcYmV0YV97cn0rWF97aX1ee1xwcmltZX0gXGJldGFfezB9K1xkZWx0YSBNX3tpfStcdmFyZXBzaWxvbl97aX0KJCQKCiRZX2kkIGlzIHRoZSB5ZWFycyBvZiBlZHVjYXRpb24sICRcYmV0YV90JCwgaXMgYSBkdW1teSBmb3IgYWdlLCAkXGJldGFfciQgaXMgYSBkdW1teSBmb3IgcmVnaW9uLCAkWF9pJCBhcmUgaW5kaXZpZHVhbCBjaGFyYWN0ZXJpc3RpY3MgKGxpa2UgZXRobmljaXR5KSwgJE1faSQgaXMgYSBkdW1teSB2YXJpYWJsZSB0aGF0IGVxdWFscyAxIGlmICRpJCBsaXZlcyBpbiB0aGUgbm9ydGgtd2VzdCByZWdpb24gYW5kIGlmICRpJCBpcyB1bmRlciAyOCB5ZWFycyBvbGQuIFRoZSBlc3RpbWF0aW9uICRcaGF0XGRlbHRhJCBpcyB0aGUgY2F1c2FsIGVmZmVjdCBvZiB0aGUgcHJvZ3JhbS4gCgpgYGB7ciwgZWNobz1GQUxTRSwgb3V0LndpZHRoPSIxMDAlIn0Ka25pdHI6OmluY2x1ZGVfZ3JhcGhpY3MoIkltYWdlbmVzL2RpZC5wbmciKQpgYGAKCgo8L2Rpdj4KCgoKIyMgYikKCjxkaXYgY2xhc3M9Imp1bWJvdHJvbiI+CiAgIDxkaXYgaWQ9Imp1c3RpZmljYXIiPgogIDxwPlBsZWFzZSB1c2luZyB0aGUgLmNzdiBkYXRhIGNoZWNrIHdoZXRoZXIgdGhlIGlkZW50aWZ5aW5nIGFzc3VtcHRpb24gc3VnZ2VzdGVkIGluKDEpIGlzIHNhdGlzZmllZC4gIE5vdGU6ICB0aGUgYXNzdW1wdGlvbiB0byB1c2UgdGhlIHN0cmF0ZWd5IHN1Z2dlc3RlZCBpbiAoMSkgbWF5bm90IGJlIHNhdGlzZmllZCBpbiB0aGUgZGF0YSBhbmQgdGhhdCBpcyBmaW5lOyBJIHdhbnQgeW91IHRvIG9ubHkgYW5hbHl6ZSB3aGV0aGVydGhlIGlkZW50aWZ5aW5nIGFzc3VtcHRpb24gaXMgc2F0aXNmaWVkIG9yIG5vdCBhbmQgcHJlc2VudCB0aGUgcmVzdWx0cy4gICg4IHBvaW50cyk8L3A+CiAgPC9kaXY+CjwvZGl2PgoKCjxkaXYgaWQgPSAicmVzcHVlc3RhIj4KClRoZSBGaWd1cmUgc2hvd3MgdGhhdCBvdXRjb21lcyBpbiB0aGUgdHJlYXRtZW50IGFuZCB0aGUgY29udHJvbCBncm91cCBwcmlvciB0byB0aGUgdHJlYXRtZW50IG1vdmVkIGluIHBhcmFsbGVsLCB3aGljaCBzdXBwb3J0cyB0aGUgYXNzdW1wdGlvbiBvZiBwYXJhbGxlbCB0cmVuZHMgb3ZlciB0aGUgaW50cm9kdWN0aW9uIG9mIHRoZSB0cmVhdG1lbnQuCgpUaGUgdGVhdG1lbnQganVzdCBhcHBseSBpZiB0aGUgd29tZW4gYXJlIDI4IG9yIGxlc3MgeWVhcnMKCmBgYHtyLCBlY2hvPUZBTFNFLCBvdXQud2lkdGg9IjEwMCUifQprbml0cjo6aW5jbHVkZV9ncmFwaGljcygiSW1hZ2VuZXMvdGVuZGVuY2lhcy5wbmciKQpgYGAKCgoKCjwvZGl2PgoKCgpSZWZlcmVuY2U6CgpbMV0gU3VsZSwgSXRvZG8gRGFuaWVsOyBFbW1hbnVlbCwgSG9wZSBBYmFoOyBBbGFiaSwgQ2hyaXN0aWFuYSBULjsgQWRlYmF5bywgSXNtYWlsOyBFbGV3ZWtlLCBUaXR1czsgSW1hbSwgQWJ1YmFrYXI7IEJhc2hpciwgTWlzYmFodSAoMjQgSnVuZSAyMDE5KS4gIlRob3VzYW5kcyBvZiBwdXBpbHMgc2tpcCBwcmltYXJ5IDUgYW5kIDYgdG8gSlNTMSIuIERhaWx5IFRydXN0LiBEYWlseSBUcnVzdC4gUmV0cmlldmVkIDMwIE1heSAyMDIwLgoKWzJdIGh0dHBzOi8vbWl4dGFwZS5zY3VubmluZy5jb20vZGlmZmVyZW5jZS1pbi1kaWZmZXJlbmNlcy5odG1sCgojIFEyCgo8ZGl2IGNsYXNzPSJqdW1ib3Ryb24iPgogICA8ZGl2IGlkPSJqdXN0aWZpY2FyIj4KICA8cD5UaGVyZSBoYXMgYmVlbiBhIHZpYnJhbnQgZGViYXRlIGluIHRoZSBsaXRlcmF0dXJlIGFzIHRvIHdoYXQgZXhwbGFpbnMgdGhlIGxhcmdlIGRpZmZlci1lbmNlcyBpbiBjcm9zcy1jb3VudHJ5IHBlciBjYXBpdGEgaW5jb21lIGxldmVscy48L3A+CiAgPC9kaXY+CjwvZGl2PgoKIyMgYSkKCjxkaXYgY2xhc3M9Imp1bWJvdHJvbiI+CiAgIDxkaXYgaWQ9Imp1c3RpZmljYXIiPgogIDxwPkluIHRoZSB2aWV3IG9mIEphcmVkIERpYW1vbmQgKDE5OTcpIHdoYXQgYXJlIHRoZSDigJx1bHRpbWF0ZSBmYWN0b3Jz4oCdIHVuZGVybHlpbmcgdGhlIGRpdmVyZ2VuY2Ugb2YgY291bnRyaWVzIGFjcm9zcyB0aGUgZ2xvYmU/ICAoMiBwb2ludHMpPC9wPgogIDwvZGl2Pgo8L2Rpdj4KCjxkaXYgaWQgPSAicmVzcHVlc3RhIj4KSXQgcmVmZXJzIHRvIHRoZSBlbnZpcm9ubWVudGFsIGNvbmRpdGlvbnMgdGhhdCBmb3N0ZXIgdGhlIGRpc3NlbWluYXRpb24gYW5kIGluaGVyaXRhbmNlIG9mIGJldHRlciBjb25kaXRpb25zIChwbGFudHMsIGFuaW1hbHMgYW5kIHRoZSByZXN1bHRzIG9mIGhhdmluZyBpdCBncm93biBhbmQgZG9tZXN0aWNhdGVkLCBjb3JyZXNwb25kaW5nbHkpLiBJbiBFdXJhc2lhIHRoZXkgaGF2ZSBhbiBlYXN0LXdlc3QgYXhpcywgd2hpbGUgaW4gQW1lcmljYSBhbmQgQWZyaWNhIHRoZXkgaGF2ZSBhIG5vcnRoLXNvdXRoIGF4aXMsIHdpdGggdGhlIGxhdHRlciBraW5kIG9mIGdlb2dyYXBoaWMgZGlzdHJpYnV0aW9uICh0aGUgdHJvcGljYWwgcmFpbmZvcmVzdCBpbiB0aGUgY2FzZSBvZiBBbWVyaWNhIGFuZCB0aGUgZGVzZXJ0IGluIHRoZSBjYXNlIG9mIEFmcmljYSkgdGhlIGRpc3NlbWluYXRpb24gYW5kIGltcHJvdmVtZW50IG9mIHRoZSBjb25kaXRpb25zIGZvciB0aGF0LCBpbiB0aW1lLCBiZXR0ZXIgb3V0Y29tZXMgaW4gdGVybXMgb2YgdGVjaG5vbG9neSAod2VhcG9ucywgc2hpcHMsIGJldHRlciBwb2xpdGljYWwgb3JnYW5pemF0aW9uLCByZXNpc3RlbmNlIHRvIGRpc2Vhc2VzLCBldGMuLCBpLmUuLCBwcm94aW1hdGUgZmFjdG9ycykgY291bGQgYmVlbiBhdHRhaW5lZCB3ZXJlIGltcG9zc2libGUuCjwvZGl2PgoKCmBgYHtyLCBlY2hvPUZBTFNFLCBvdXQud2lkdGg9IjEwMCUifQprbml0cjo6aW5jbHVkZV9ncmFwaGljcygiSW1hZ2VuZXMvZWplcy5wbmciKQpgYGAKR3VucywgR2VybXMgYW5kIFN0ZWVsOiBUaGUgRmF0ZXMgb2YgSHVtYW4gU29jaWV0aWVzLiBKYXJlZCBEaWFtb25kLiBOZXcgWW9yazogVy5XLiBOb3J0b24sIDE5OTcsIDQ4MCBwcAoKCiMjIGIpIAoKPGRpdiBjbGFzcz0ianVtYm90cm9uIj4KICAgPGRpdiBpZD0ianVzdGlmaWNhciI+CiAgPHA+RG8gQWNlbW9nbHUsIEpvaG5zb24gYW5kIFJvYmluc29uICgyMDAyKSBjb25jdXIgd2l0aCB0aGUgdmlldyBvZiBEaWFtb25kLCBpbiAgcGFydGljdWxhciwgIHdoYXQgIGV2aWRlbmNlICBkbyAgdGhleSAgYnJpbmcgIHRvICBzdXBwb3J0ICBvciAgb3ZlcnR1cm4gIHRoZSAgdGhlb3J5IHByb3Bvc2VkIGJ5IERpYW1vbmQ/ICAoMiBwb2ludHMpPC9wPgogIDwvZGl2Pgo8L2Rpdj4KCgo8ZGl2IGlkID0gInJlc3B1ZXN0YSI+CkFjZW1vZ2x1LCBKb2huc29uIGFuZCBSb2JpbnNvbiBkaXNhZ3JlZSB3aXRoIERpYW1vbmQuIEZvciBpZiBpcyBpdCB0cnVlIHRoYXQgZWNvbm9taWMgZGV2ZWxvcG1lbnQgZGVwZW5kcyBvbiBnZW9ncmFwaGljIGZhY3RvcnMgKHRoZXJlIGFyZSBzaW1wbGUgYW5kICBzb3BoaXN0aWNhdGVkIHZlcnNpb25zIG9mIHRoaXMgaHlwb3RoZXNpcyksIGNvdW50cnkgcG93ZXJzIG9mIHRoZSBzaXh0ZWVudGggY2VudHVyeSB3b3VsZG4ndCBiZSByZWxhdGl2ZWx5IHBvb3Igbm93YWRheXMuIEluIG9yZGVyIHRvIG1lYXN1cmUgZWNvbm9taWMgcHJvc3Blcml0eSB1cmJhbml6YXRpb24gYW5kIHBvcHVsYXRpb24gZGVuc2l0eSBwYXR0ZXJucyBhcmUgdXNlZCBhcyBwcm94aWVzIGFuZCB3aXRoIHRoZXNlIHJlc3VsdHMgdGhleSBzaG93IHRoZSBuZWdhdGl2ZSByZWxhdGlvbiBiZXR3ZWVuIGVjb25vbWljIHByb3NwZXJpdHkgaW4gdGhlIDE1MDBzIGFuZCB0aGUgcGVyIGNhcGl0YSBpbmNvbWUgaW4gdGhlc2UgZGF5cyBhbW9uZyAgdGhlIGZvcm1lciBjb2xvbmllcy4gVGhlIGNyZWF0aW9uIG9mIChnb29kKSBpbnN0aXR1dGlvbnMgd2FzIHRoZSBtZWNoYW5pc20gb2YgY2hhbmdlLCBkdWUgdG8gdGhlIGV1cm9wZWFuIGNvbG9uaXphdGlvbiwgYmVjYXVzZSB0aG9zZSBpbnN0aXR1dGlvbnMgd2VyZSBwcmVjaXNlbHkgYW4gZW5hYmxpbmcgZmFjdG9yIGZvciBhIGJldHRlciBpbmR1c3RyaWFsaXphdGlvbi4KCjwvZGl2PgoKCgojIyBjKQoKPGRpdiBjbGFzcz0ianVtYm90cm9uIj4KICAgPGRpdiBpZD0ianVzdGlmaWNhciI+CiAgPHA+VGhlICBjb25jbHVzaW9ucyAgZHJhd24gIGJ5ICBBY2Vtb2dsdSwgIEpvaG5zb24gIGFuZCAgUm9iaW5zb24gICgyMDAyKSwgIGhvd2V2ZXIsIGxhdGVyIHdvcmsgcG9pbnRzIG91dCBkZXBlbmRzIG9uIHdoZXRoZXIgd2UgY29tcGFyZSB0ZXJyaXRvcmllcyBvciBwb3B1bGF0aW9ucy4gRXhwbGFpbiBieSBjb25zdHJ1Y3RpbmcgYSBzaW1wbGUgZXhhbXBsZS4gICgyIHBvaW50cyk8L3A+CiAgPC9kaXY+CjwvZGl2PgoKPGRpdiBpZCA9ICJyZXNwdWVzdGEiPgpJZiB0b2RheSBjb3VudHkgQSBwb3B1bGF0aW9uIGFzc3VtZSBjb21wcmlzZXMgb2YgJGEkIHBvcnRpb24gYSBmcm9tIGNvdW50cnkgWCwgJGIkIGZyb20gY291bnRyeSBZLCBhbmQgJGMkIGZyb20gY291bnRyeSBaLCBzdWNoIHRoYXQgJGErYitjPTEkLiBUaGUgYW5jZXN0cnkgYWRqdXN0ZWQgcG9wdWxhdGlvbiBkZW5zaXR5IG9mIDE1MDAgaXM6ICRheyp9JCBwb3B1bGF0aW9uIGRlbnNpdHkgMTUwMCBvZiBYICQrYnsqfSQgcG9wdWxhdGlvbiBkZW5zaXR5IDE1MDAgb2YgWSAkK2N7Kn0kIHBvcHVsYXRpb24gZGVuc2l0eSAxNTAwIG9mIFouIEl0IHdpbGwgYmUgZm91bmQgdGhhdCB0aGUgcmV2ZXJzYWwgb2YgZm9ydHVuZXMgaHlwb3RoZXNpcyBkb2VzIG5vdCBob2xkLgoKPC9kaXY+CgoKCiMjIGQpCgo8ZGl2IGNsYXNzPSJqdW1ib3Ryb24iPgogICA8ZGl2IGlkPSJqdXN0aWZpY2FyIj4KICA8cD5JbiBsaWdodCBvZiB0aGUgYWJvdmUgZHJhdyB5b3VyIG93biBhc3Nlc3NtZW50IG9mIGZhY3RvcnMgdW5kZXJseWluZyB0aGUgZGlmZmVyZW5jZXMgaW4gY3Jvc3MtY291bnRyeSBwZXIgY2FwaXRhIGluY29tZSBsZXZlbHMuICAoMiBwb2ludHMpPC9wPgogIDwvZGl2Pgo8L2Rpdj4KCjxkaXYgaWQgPSAicmVzcHVlc3RhIj4KVGhlIGZhY3RvcnMgdW5kZXJseWluZyBpbmNvbWUgZGlmZmVyZW5jZXMgYW1vbmcgY291bnRyaWVzIGFyZTogZ2VvZ3JhcGh5LCBpbnN0aXR1dGlvbnMgYW5kIHRob3NlIGFzc29jaWF0ZWQgd2l0aCBodW1hbiByZXNvdXJjZXMuIFRha2UgZ2VvZ3JhcGhpYyBmYWN0b3JzIGZvciBpbnN0YW5jZSwgd2l0aCB0aGUgcmlnaHQgZ2VvZ3JhcGhpYyBlbnZpcm9ubWVudCwgcG9wdWxhdGlvbiBjYW4gaGF2ZSBhY2NlcyB0byBwcm9kdWN0aW9uIHN1cHBseSBtYXRlcmlhbHMsIGdvb2QgY29uZGl0aW9ucyBmb3IgZmFybWluZywgYW5kIGJldHRlciBjb25kaXRpb25zIGZvciB0aGUgZGV2ZWxvcG1lbnQgb2YgYWN0aXZpdGllcyBzdWNoIGFzIGZpc2hpbmcsIGFuZCBhbmltYWwgYnJlZWRpbmcsIGV0Yy4gRXZlbiB3aGVuIHRoZXkgYXJlIHZlcnkgaW1wb3J0YW50LCBnZW9ncmFwaGljIGZhY3RvcnMgYXJlIG5vdCBkZXRlcm1pbmFudCB3aGVuIHdlIGFyZSB0cnlpbmcgdG8gZXhwbGFpbiB0aGUgZGlmZmVyZW5jZXMgaW4gcGVyIGNhcGl0YSBpbmNvbWUgYW1vbmcgZGlmZmVyZW50IGNvdW50cmllcywgc2luY2UgaW4gY291bnRyaWVzIHdoZXJlIHRoZXJlIGlzIG5vIGdlb2dyYXBoaWMgYWR2YW50YWdlIHRoZXJlIGFyZSBpbnN0aXR1dGlvbnMgdGhhdCBmb3N0ZXIgaW52ZXN0bWVudCBhbmQgaW5kdXN0cmlhbCBkZXZlbG9wbWVudC4gSW4gdGhpcyBjYXNlcywgaW5zdGl0dXRpb25zIGFyZSBpbiBjaGFyZ2Ugb2YgZXN0YWJsaXNoaW5nIGNvbW1lcmNpYWwgdHJhZGVzIHRvIHNhdGlzZnkgdGhlIG5lZWRzIGNhdXNlZCBieSBzdWNoIHByZWNhcmlvdXMgZ2VvZ3JhcGhpYyBzaXR1YXRpb24uIEEgd2F5IHRvIHBvbmRlciBzdWNoIG5lZWRzIGlzIHRvIG1ha2UgY29sbGFib3JhdGlvbiBhZ3JlZW1lbnRzIHRvIGF0dGFpbiBodW1hbiByZXNvdXJjZXMsIHRha2luZyBpbiBjb25zaWRlcmF0aW9uIHRoZSBxdWFudGl0eSBhbmQgdGhlIHF1YWxpdHkgb2Ygc3VjaCBsYWJvciBwb3dlci4gQW4gZXhhbXBsZSBvZiB0aGUgbGF0dGVyIGlzIFVTQSwgd2hlcmUgdGhlcmUgaXMgYSBtYXNzaXZlIG1pZ3JhdGlvbiB3aXRoIGEgaGlnaCBkZWdyZWUgb2Ygc3BlY2lhbGl6YXRpb24sIGFzIGl0IGNhbiBiZSBvYnNlcnZlZCBpbiB0aGUgYWNhZGVtaWMsIGZhcm1pbmcgYW5kIHNlcnZpY2VzIHNlY3RvcnMuIEluIHN1bW1hcnksIHRoZSBkaWZmZXJlbmNlcyBpbiBwZXIgY2FwaXRhIGluY29tZXMgaW4gZGlmZmVyZW50IGNvdW50cmllcyBhcmUgY2xvc2VseSByZWxhdGVkIHRvIHRoZSBpbnRlcmFjdGlvbnMgYmV0d2VlbiBnZW9ncmFwaHksIGluc3RpdHV0aW9ucyBhbmQgaHVtYW4gcmVzb3VyY2VzLgoKPC9kaXY+CgoKIyBRMwoKPGRpdiBjbGFzcz0ianVtYm90cm9uIj4KICAgPGRpdiBpZD0ianVzdGlmaWNhciI+CiAgPHA+IE9uZSBvZiB0aGUga2V5IHByb2JsZW1zIGluIGVzdGltYXRpbmcgY2F1c2FsIGVmZmVjdHMgdXNpbmcgb2JzZXJ2YXRpb25hbCBkYXRhIGlzIHRoZXNlbGVjdGlvbiBwcm9ibGVtLjwvcD4KICA8L2Rpdj4KPC9kaXY+CgojIyBhKQoKPGRpdiBjbGFzcz0ianVtYm90cm9uIj4KICAgPGRpdiBpZD0ianVzdGlmaWNhciI+CiAgPHA+IEV4cGxhaW4gd2hhdCBpcyB0aGUgc2VsZWN0aW9uIHByb2JsZW0gdXNpbmcgYSBzaW1wbGUgZXhhbXBsZT8gIChQbGVhc2UgZXhwbGljaXRseSBpZGVudGlmeSB0aGUgZmVhdHVyZXMgdGhhdCBtaWdodCBnaXZlIHJpc2UgdG8gc2VsZWN0aW9uIGluIGNvbnRleHQgb2YgdGhlIGV4YW1wbGUgcHJvdmlkZWQpICgyIHBvaW50cyk8L3A+CiAgPC9kaXY+CjwvZGl2PgoKPGRpdiBpZCA9ICJyZXNwdWVzdGEiPgoKVGhpcyBhbnN3ZXIgaXMgYmFzZWQgb24gaG9tZXdvcmsgMS4KClRoZSBoZWFsdGggcHJvYmxlbSBnZW5lcmF0ZWQgYnkgSElWIGRvZXMgbm90IGRpc3Rpbmd1aXNoIHJhY2UsIGdlbmRlciBvciBzb2NpYWwgc3RhdHVzLCBkZXZlbG9waW5nIGNvdW50cmllcywgcGFydGljdWxhcmx5IHRob3NlIGxvY2F0ZWQgaW4gQWZyaWNhLCBoYXZlIHRoaXMgZGlzZWFzZSBhcyBvbmUgb2YgdGhlIG1haW4gaGVhbHRoIHByb2JsZW1zLCBaYW1iaWEgaXMgbm90IHRoZSBleGNlcHRpb24uIFRodXMsIHRoZSBpbnRlcnZlbnRpb24gcHJvcG9zYWwgaXMgb24gSElWIFByZXZlbnRpb24gdGhyb3VnaCBTZXggRWR1Y2F0aW9uLgoKVHJlYXRtZW50IGFuZCBjb250cm9sIGdyb3VwcyBjYW4gYmUgc2VsZWN0ZWQgcmFuZG9tbHkuIFRoaXMgcmFuZG9taXphdGlvbiBvbmx5IGFmZmVjdHMgdGhlIHRyZWF0bWVudCB1bml0LCBidXQgZG9lcyBub3QgZGlyZWN0bHkgYWZmZWN0IGluZGl2aWR1YWxzIHdob3NlIGhldGVyb2dlbmVpdHkgaXMgaW46IGVkdWNhdGlvbiwgaGF2aW5nIG9yIG5vdCBoYXZpbmcgSElWLCByZWdpb24gb2YgcmVzaWRlbmNlLCBiZWxpZWZzIGFib3V0IHRoZSBkaXNlYXNlLCBzb2NpYWwgc3RhdHVzLCByZWxpZ2lvbiwgZXRjLiBUaGV5IHdpbGwgYWZmZWN0IHRoZSBpbnRlcnByZXRhdGlvbiBvZiB0aGUgcmVzdWx0cyAoc2VsZWN0aW9uIHByb2JsZW0pLiBCZWNhdXNlIGFsbCB0aGVzZSBmYWN0b3JzIGluZmx1ZW5jZSB0aGUgcHVyc3VpdCBvZiBzZXggZWR1Y2F0aW9uLgoKPC9kaXY+CgoKCiMjIGIpCgo8ZGl2IGNsYXNzPSJqdW1ib3Ryb24iPgogICA8ZGl2IGlkPSJqdXN0aWZpY2FyIj4KICA8cD4gVGhlIGNvbmRpdGlvbmFsIGluZGVwZW5kZW5jZSBhc3N1bXB0aW9uIChDSUEpIGlzIHN1Z2dlc3RlZCBhcyBhIHNvbHV0aW9uIHRvIHRoZSBzZWxlY3Rpb24gcHJvYmxlbS4gIEluIHRoZSBjb250ZXh0IG9mIHRoZSBleGFtcGxlIHByb3ZpZGVkIGluIHBhcnQgKGEpIGRlc2NyaWJlIGhvdyB5b3Ugd291bGQgaW1wbGVtZW50IGEgcmVncmVzc2lvbiB0aGF0IHNhdGlzZmllcyBDSUEgZ2l2ZW4gdGhlIHNlbGVjdGlvbiBwcm9ibGVtIHlvdSBpZGVudGlmaWVkPyAgKDIgcG9pbnQpPC9wPgogIDwvZGl2Pgo8L2Rpdj4KCgo8ZGl2IGlkID0gInJlc3B1ZXN0YSI+ClRoZSByZWdyZXNzaW9uIHRvIGltcGxlbWVudCB3b3VsZCBiZQoKJCQgeV9pID0gXGFscGhhICsgXHBoaSBEX2kgKyBYJ19pXGdhbW1hK1xtdV9pICQkCiRYX2kkIGFyZSB0aGUgY2hhcmFjdGVyaXN0aWNzIG1lbnRpb25lZCBhYm92ZSwgd2hlcmUgb2JzZXJ2YWJsZSBjaGFyYWN0ZXJpc3RpY3MsICRYX2kkIGFyZSB0aGUgb25seSByZWFzb24gZm9yIHRoZSBjb3JyZWxhdGlvbiBiZXR3ZWVuICREX2kkIGFuZCAkXGV0YV9pID0gWCdfaVxnYW1tYStcbXVfaSQKPC9kaXY+CgoKIyMgYykKCjxkaXYgY2xhc3M9Imp1bWJvdHJvbiI+CiAgIDxkaXYgaWQ9Imp1c3RpZmljYXIiPgogIDxwPiBBICByZXNlYXJjaGVyICB3YW50cyAgdG8gIHN0dWR5ICB0aGUgIHJlbGF0aW9uc2hpcCAgYmV0d2VlbiAgcHJvdmlzaW9uICBvZiAgZGV3b3JtaW5nIGRydWdzIGFuZCByZWR1Y3Rpb24gaW4gc2ljayBsZWF2ZSBmcm9tIHdvcmsuICBUbyBkbyB0aGlzIHRoZSByZXNlYXJjaGVyIGRlY2lkZXMgdG8gcmFuZG9taXplIHRoZSBwcm92aXNpb24gb2YgZHJ1Z3MgYXQgYW4gaW5kaXZpZHVhbCBsZXZlbCB3aXRoaW4gYSB2aWxsYWdlIGFuZCB0aGVuIGNvbXBhcmUgb3V0Y29tZXMgb2YgaW5kaXZpZHVhbHMgd2hvIHdlcmUgcHJvdmlkZWQgdGhlc2UgZHJ1Z3Mgd2l0aCBpbmRpdmlkdWFscyB3aG8gIHdlcmUgIG5vdC4gICBUaGlzICBzdHJhdGVneSAgd2lsbCAgcHJvdmlkZSAgdXMgIHdpdGggIHRoZSAgcHJlY2lzZSAgY2F1c2FsICBlZmZlY3QgIG9mIGRld29ybWluZyBkcnVncy4gIENvbW1lbnQuICAoMiBwb2ludHMpPC9wPgogIDwvZGl2Pgo8L2Rpdj4KCjxkaXYgaWQgPSAicmVzcHVlc3RhIj4KVGhlIGNhdXNhbCBlZmZlY3Qgd291bG4ndCBiZSBjb3JyZWN0bHkgaWRlbnRpZmllZCwgc2luY2UgaWYgYSBjb250cm9sIGluZGl2aWR1YWwgdGhhdCBpcyBpbmZlY3RlZCBoYXMgY29udGFjdCB3aXRoIGEgdHJlYXRtZW50IGluZGl2aWR1YWwgaXMgcG9zc2libGUgdGhhdCB0aGUgdHJlYXRtZW50IGluZGl2aWR1YWwgbWF5IGhhdmUgcGFyYXNpdGVzIGFnYWluLiBTbywgc3BlY2lmaWNhbGx5LCB0aGUgc3BpbGxvdmVyIGVmZmVjdCB3b3VsZCBiZSBiaWFzaW5nIHRoZSByZXN1bHRzLgo8L2Rpdj4KCiMgUTQKCjxkaXYgY2xhc3M9Imp1bWJvdHJvbiI+CiAgIDxkaXYgaWQ9Imp1c3RpZmljYXIiPgogIDxwPiBGaWd1cmUgMSBzaG93cyB0aGUgZGVtYW5kIGZvciB0d28gaGVhbHRoIHByb2R1Y3RzIG9mZmVyZWQgdG8gY29uc3VtZXJzIHVzaW5nIHRha2UtaXQtb3ItbGVhdmUtaXQgcHJpY2Ugb2ZmZXJzLjwvcD4KICA8L2Rpdj4KPC9kaXY+CgpgYGB7ciB6YW1iaWEsIGVjaG89RkFMU0UsIG91dC53aWR0aD0iMTAwJSJ9CmtuaXRyOjppbmNsdWRlX2dyYXBoaWNzKCJJbWFnZW5lcy9maWcxZmluYWwucG5nIikKYGBgCgojIyBhKQoKPGRpdiBjbGFzcz0ianVtYm90cm9uIj4KICAgPGRpdiBpZD0ianVzdGlmaWNhciI+CiAgPHA+IFdoYXQgYXJlIHRoZSBrZXkgZmVhdHVyZXMgb2YgZGVtYW5kIGZvciB0aGUgdHdvIGhlYWx0aCBwcm9kdWN0cyBzaG93biBpbiBGaWd1cmUxLiAgUGxlYXNlIHN1bW1hcml6ZS4gICgyIHBvaW50cyk8L3A+CiAgPC9kaXY+CjwvZGl2PgoKCjxkaXYgaWQgPSAicmVzcHVlc3RhIj4KQm90aCwgYWRxdWlzaXRpb24gYW5kIGFkcXVpc2l0aW9uLXVzYWdlLCBkZW1hbmQgY3VydmVzIGZvciB0aGUgbW9zcXVpdG8gbmV0cyByZW1haW4gZGVjcmVhc2luZyBhbmQgcGFyYWxsZWwgdGhyb3VnaCB0aGUgaW5jcmVtZW50cyBvZiB0aGUgcHJpY2UsIHdoaWNoIGluZGljYXRlcyB1cyB0aGF0IHRoZXJlIGlzIG5vIHN1bmsgY29zdCwgc2luY2UgdGhlIGVsYXN0aWNpdHkgb2YgZGVtYW5kIGFuZCB1c2FnZSBhcmUgc2ltaWxhci4KClRoZSBkZW1hbmQgY3VydmVzIGZvciBhZHF1aXNpdGlvbiBhbmQgYWRxdWlzaXRpb24tdXNhZ2UgZm9yIHRoZSB3YXRlciBmaWx0ZXJzIHJlbWFpbiBkZWNyZWFzaW5nIGJ1dCBhcmVu4oCZdCBwYXJhbGxlbCB0aHJvdWdoIHRoZSBpbmNyZW1lbnRzIG9mIHRoZSBwcmljZSwgd2hpY2ggdGVsbHMgdXMgdGhhdCB0aGUgcGVyc29ucyB0aGF0IHBheSBtb3JlIGhhdmUgYSBncmVhdGVyIGFwcHJlY2lhdGlvbiBmb3IgdGhpcyBoZWFsdGggcHJvZHVjdCAoc2VsZWN0aW9uIGVmZmVjdCkuCgoKPC9kaXY+CgoKIyMgYikKCjxkaXYgY2xhc3M9Imp1bWJvdHJvbiI+CiAgIDxkaXYgaWQ9Imp1c3RpZmljYXIiPgogIDxwPiBPbmUgIG9mICB0aGUgIGNlbnRyYWwgIGRlYmF0ZXMgIGluICB0aGUgIGxpdGVyYXR1cmUgIGhhcyAgYmVlbiAgb24gIHdoZXRoZXIgIGhlYWx0aCAgcHJvZHVjdHMgIHNob3VsZCAgYmUgIHN1YnNpZGlzZWQgIG9yICBub3QuICAgV2hhdCAgYXJlICB0aGUgIG1haW4gIGNvbmRpdGlvbnMgIHVuZGVyICB3aGljaCBzdWJzaWRpc2F0aW9uIHdvdWxkIGJlIHNvY2lhbGx5IGRlc2lyYWJsZT8gICgyIHBvaW50cyk8L3A+CiAgPC9kaXY+CjwvZGl2PgoKPGRpdiBpZCA9ICJyZXNwdWVzdGEiPgoKMS4gVGhhdCB3aGVuIHByb2R1Y3RzIGFyZSBpbnRyb2R1Y2VkIGluIHRoZSBtYXJrZXQgZm9yIHRoZSBzb2NpZXR5IHRvIGxlYXJuIGFib3V0IHRoZSBiZW5lZml0cyBvZiB0aGUgcHJvZHVjdCBpdHNlbGYsIHRoZSBtYXJnaW5hbCBiZW5lZml0IGlzIGdyZWF0ZXIgdGhhbiB0aGUgbWFyZ2luYWwgY29zdCAobGVhcm5pbmcgZWZmZWN0cykuCjIuIFN1bmsgY29zdCBlZmZlY3RzLgozLiBUaGF0IHRoZSBsb25nIHRlcm0gYWNjZXB0YW5jZSBvZiB0aGUgcHJvZHVjdCBkb2VzbuKAmXQgaG9sZCBkb3duIChBbmNob3JpbmcgZWZmZWN0cykuCjQuIEFjY29yZGluZyB0byB0aGUgbmF0dXJlIG9mIHRoZSBwcm9kdWN0LCBpdHMgdXNlIGRvZXMgbm90IGhhdmUgaGFybWZ1bCBzaWRlIGVmZmVjdHMgKHN1YnNpZGllcyBpbiBtZWRpY2luZXMgdnMgc3Vic2lkaWVzIGluIHdhdGVyIGZpbHRlcnMpCgo8L2Rpdj4KCgojIyBjKQoKPGRpdiBjbGFzcz0ianVtYm90cm9uIj4KICAgPGRpdiBpZD0ianVzdGlmaWNhciI+CiAgPHA+IENvc3Qgc2hhcmluZyDigJMgY2hhcmdpbmcgYSBzdWJzaWRpc2VkLCBwb3NpdGl2ZSBwcmljZSDigJMgaXMgYXJndWVkIHRvIGJlIG5lY2Vzc2FyeSBmb3JjZXJ0YWluIGhlYWx0aCBwcm9kdWN0cyB0byBhdm9pZCB3YXN0aW5nIHJlc291cmNlcyBvbiB0aG9zZSB3aG8gd2lsbCBub3QgdXNlIG9yZG8gbm90IG5lZWQgdGhlIHByb2R1Y3QuICBCYXNlZCBvbiB0aGUgZGVtYW5kIGFuZCB1c2FnZSBjdXJ2ZXMgc2hvd24gaW4gRmlndXJlMSwgY29tbWVudCBvbiB3aGV0aGVyIHByaWNlcyBhY3QgYXMgYSBzY3JlZW5pbmcgZGV2aWNlIGFuZCBjb3N0IHNoYXJpbmcgc2hvdWxkYmUgaW1wbGVtZW50ZWQgZm9yIG1vc3F1aXRvIG5ldHMgb3Igd2F0ZXIgZmlsdGVycywgbmVpdGhlciBvciBib3RoPyAgKDIgcG9pbnRzKTwvcD4KICA8L2Rpdj4KPC9kaXY+Cgo8ZGl2IGlkID0gInJlc3B1ZXN0YSI+CiAKUHJpY2VzIHdvcmsgYXMgYSBkZXRlY3Rpb24gbWVkaXVtIGZvciB0aGUgd2FzdGluZyByZXNvdXJjZXMuIEluIHRoZSBtb3NxdWl0byBuZXRzIHRoZSBhZHF1aXNpdGlvbi11c2FnZSBjdXJ2ZSBpcyBwYXJhbGxlbCB0byB0aGUgYWRxdWlzaXRpb24gY3VydmUuIFRoaXMgb2NjdXJzIGluIGEgbGVzc2VyIHByb3BvcnRpb24gb24gdGhlIHdhdGVyIGZpbHRlcnMsIHdoZXJlIHRoZSB1c2FnZSBpcyBncmVhdGVyIHdoZW4gdGhlIHByaWNlIHJpc2VzLiBPbmUgY291bGQgY29uY2x1ZGUgdGhhdCB0aGUgZ3JlYXRlciByZXNvdXJjZXMgd2FzdGluZyBvY2N1cnMgaW4gdGhlIG1vc3F1aXRvIG5ldHMgYW5kIHkgYSBsZXNzZXIgZGVncmVlIGluIHRoZSB3YXRlciBmaWx0ZXJzLCBoZW5jZSBjb3N0IHNoYXJpbmcgd291bGQgaGF2ZSB0byBoYXBwZW4gaW4gYm90aCBzY2VuYXJpb3MgYnV0IGluIGEgaGlnaGVyIHByb3BvcnRpb24gaW4gdGhlIG1vc3F1aXRvIG5ldHMuCgo8L2Rpdj4KIyMgZCkKCjxkaXYgY2xhc3M9Imp1bWJvdHJvbiI+CiAgIDxkaXYgaWQ9Imp1c3RpZmljYXIiPgogIDxwPiBUaGUgIGZpbmRpbmcgIHRoYXQgIG92ZXIgIGluY2x1c2lvbiAgaXMgIGxpbWl0ZWQgIGRvZXMgIG5vdCAgYXBwbHkgIHRvICBtZWRpY2FsICB0cmVhdG1lbnQgc3VjaCBhcyBhbnRpbWFsYXJpYWxzIG9yIGFudGliaW90aWNzLiAgV2hhdCBtYWtlcyBtZWRpY2FsIHRyZWF0bWVudCBwcmVzY3JpYmluZywgZm9yIGluc3RhbmNlIGFudGliaW90aWNzLCBkaWZmZXJlbnQgZnJvbSBoZWFsdGggcHJvZHVjdHMgc3VjaCBhcyBiZWQgbmV0cyBvciB3YXRlcmZpbHRlcnM/ICBXaHkgaXMgb3ZlciB0cmVhdG1lbnQgYSBjYXVzZSBmb3IgY29uY2Vybj8gICgyIHBvaW50cyk8L3A+CiAgPC9kaXY+CjwvZGl2PgoKPGRpdiBpZCA9ICJyZXNwdWVzdGEiPgoKVGhlIGRpZmZlcmVuY2UgaXMgdGhlIG5hdHVyZSBvZiB0aGUgcHJvZHVjdCwgd2l0aCBhIHN1YnNpZHkgb24gbWVkaWNhbCB0cmVhdG1lbnRzLCBwZW9wbGUgdGhhdCBkb2Vzbid0IG5lZWQgaXQgbWF5IGdlbmVyYXRlIGFuIG92ZXIgaW5jbHVzaW9uIGluIHRoZSBzdWJ2ZW50aW9uIGJ5IHRoaW5raW5nIHRoZXkgYXJlIGluZmVjdGVkIGFuZCBzdWJtaXQgdGhlbXNlbHZlcyB0byBhbiBvdmVyIHRyZWF0bWVudCwgYWZmZWN0aW5nIHRoZSBwdWJsaWMgaGVhbHRoLiBXaGlsZSBhbiBvdmVyIGluY2x1c2lvbiBpbiBwcm9kdWN0cyBsaWtlIGJlZCBuZXRzIG9yIHdhdGVyZmlsdGVycyBkb2Vzbid0IGhhcyB0aGF0IGtpbmQgb2YgY29uc2VxdWVuY2VzLgoKT3ZlcnRyZWF0bWVudCBpcyBhIG1hdHRlciBvZiBjb25jZXJuIGJlY2F1c2UgaWYgYSBub24taW5mZWN0ZWQgcGVyc29uIGdldHMgdHJlYXRlZCB3aXRoIHRoZSByZWxhdGVkIG1lZGljYXRpb25zIHRoZW4gYmFjdGVyaWEgd2lsbCBkZXZlbG9wIHJlc2lzdGFuY2UgdG8gc3VjaCBtZWRpY2F0aW9ucywgd2hpY2ggaW4gdHVybiBtYXkgYmVjb21lIGEgcHVibGljIGhlYWx0aCBwcm9ibGVtLiAgCjwvZGl2PgoKUmVmZXJlbmNlczoKCkNsYXNzIHNsaWRlcy4gCgpDb2hlbiwgSi4sIER1cGFzLCBQLiwgJiBTY2hhbmVyLCBTLiAoMjAxNSkuIFByaWNlIHN1YnNpZGllcywgZGlhZ25vc3RpYyB0ZXN0cywgYW5kIHRhcmdldGluZyBvZiBtYWxhcmlhIHRyZWF0bWVudDogRXZpZGVuY2UgZnJvbSBhIHJhbmRvbWl6ZWQgY29udHJvbGxlZCB0cmlhbC4gQW1lcmljYW4gRWNvbm9taWMgUmV2aWV3LCAxMDUoMiksIDYwOS00NS4KCiMgUTUKCjxkaXYgY2xhc3M9Imp1bWJvdHJvbiI+CiAgIDxkaXYgaWQ9Imp1c3RpZmljYXIiPgogIDxwPiBUaGUgZWR1Y2F0aW9uYWwgc3lzdGVtIG9mIENvdW50cnkgQSBpcyBwcm9kdWNpbmcgdmVyeSBwb29yIG91dGNvbWVzIGFuZCB0aGV5IGRlY2lkZSB0aGF0IHRoZXkgc2hvdWxkIGhpcmUgbW9yZSB0ZWFjaGVycyB0byByZWR1Y2UgdGhlIG51bWJlcnMgb2YgcHVwaWxzIHBlciB0ZWFjaGVyICh0aGF0IGlzIHRoZSBwdXBpbC10ZWFjaGVyLXJhdGlvIChQVFIpKSB0byBiZSBhYmxlIHRvIGluY3JlYXNlIHRlYWNoZXIgZWZmZWN0aXZlbmVzczogPC9wPgogIDwvZGl2Pgo8L2Rpdj4KCiMjIGEpCgo8ZGl2IGNsYXNzPSJqdW1ib3Ryb24iPgogICA8ZGl2IGlkPSJqdXN0aWZpY2FyIj4KICA8cD4gQ29uc3VsdGFudCB4IHNheXMgdGhhdCBpbmNyZWFzaW5nIG51bWJlciBvZiB0ZWFjaGVycyBtaWdodCBub3QgaW5jcmVhc2UgdGhlIGVmZmVjdGl2ZSBQVFIgYXMgZXhpc3RpbmcgdGVhY2hlcnMgbWlnaHQgY2hhbmdlIHRoZWlyIGJlaGF2aW91ci4gIEV4cGxhaW4uICAoMiBwb2ludHMpIDwvcD4KICA8L2Rpdj4KPC9kaXY+Cgo8ZGl2IGlkID0gInJlc3B1ZXN0YSI+CgpUaGUgZWZlY2N0aXZlIFBUUiBpczoKCiQkCkUgUCBUIFI9XGZyYWN7UCBUIFJ9eygxLVx0ZXh0IHsgQWJzZW5jZSB9KX0KJCQKCkNvbnN1bHRvciB4IGlzIGFzc3VtaW5nIHRoYXQgdGhlIGNoYW5nZSBpbiBiZWhhdmlvdXIgd2lsbCBiZSBhc3NvY2lhdGVkIHdpdGggdGhlIGF1c2VuY2Ugb2YgdGVhY2hlcnMuCjwvZGl2PgoKCgojIyBiKQoKPGRpdiBjbGFzcz0ianVtYm90cm9uIj4KICAgPGRpdiBpZD0ianVzdGlmaWNhciI+CiAgPHA+IENvbnN1bHRhbnQgeSBzYXlzIHRoYXQgdGhlIG5ldyB0ZWFjaGVycyBzaG91bGQgYmUgaGlyZWQgb24gdGVtcG9yYXJ5IGNvbnRyYWN0cyB0byBjcmVhdGUgaW5jZW50aXZpc2VzIHRvIHBlcmZvcm0gYmV0dGVyLiAgV2h5PyAgKDIgcG9pbnQpIDwvcD4KICA8L2Rpdj4KPC9kaXY+CgoKPGRpdiBpZCA9ICJyZXNwdWVzdGEiPgoKSWYgcmVjZW50bHkgaGlyZWQgdGVhY2hlcnMgZmluZCB0aGVtc2VsdmVzIGluIHRoZSBuZWNlc3NpdHkgb2Yga2VlcGluZyB0aGVpciBqb2JzLCB3aGVuIHRoZXkgcmVhbGl6ZSB0aGF0IHRoZXkgZG9uJ3QgaGF2ZSBhIGRlZmluaXRlIGNvbnRyYWN0IHRoZXkgd2lsbCBiZSBtb3RpdmF0ZWQgdG8gaGF2ZSBhIGJldHRlciBwZXJmb3JtYW5jZSwgZm9yIGluc3RhbmNlLCBhdHRlbmRpbmcgdG8gYWxsIG9mIHRoZWlyIGNsYXNzZXMgYW5kIGltcHJvdmluZyB0aGVpciBza2lsbHMgaW4gdGhlIGVkdWNhdGlvbiBhcmVhLgoKPC9kaXY+CgoKCgojIyBjKQoKPGRpdiBjbGFzcz0ianVtYm90cm9uIj4KICAgPGRpdiBpZD0ianVzdGlmaWNhciI+CiAgPHA+IEluIGFzc2Vzc2luZyBlZmZlY3Qgb2YgcHJpdmF0ZSBzY2hvb2xzIE11cmFsaWRoYXJhbiBhbmQgU3VuZGFyYW0gKDIwMTUpIHN0cmVzc3RoZSBpbXBvcnRhbmNlIG9mIGFjY291bnRpbmcgZm9yIHR3byBraW5kcyBvZiBzcGlsbG92ZXJzLiAgRWxhYm9yYXRlICgyIHBvaW50cykgPC9wPgogIDwvZGl2Pgo8L2Rpdj4KCgo8ZGl2IGlkID0gInJlc3B1ZXN0YSI+CgpBIGdyb3VwIG9mIHN0dWRlbnRzIGZyb20gYSBwdWJsaWMgc2Nob29sIGlzIG1vdmVkIHRvIGEgcHJpdmF0ZSBzY2hvb2wgaW4gZXhjaGFuZ2Ugb2YgYSBib251cy4gVGhlbiB0aGVyZSBleGlzdCB0d28gc3BpbGxvdmVyIGVmZmVjdHMsIG9uZSBpcyBvbiB0aGUgcHJpdmF0ZSBzY2hvb2wgc3R1ZGVudHMgdGhhdCByZWNlaXZlIHRvIHRoZWlyIG5ldyBjbGFzc21hdGVzICh0aGUgb25lcyB0aGF0IGNhbWUgZnJvbSB0aGUgcHVibGljIHNjaG9vbCkgYW5kIHRoZSBvdGhlciBpcyBvbiB0aGUgc3R1ZGVudHMgdGhhdCByZW1haW4gb24gdGhlIHB1YmxpYyBzY2hvb2wuCgpJZiB0aGUgcHVibGljIHNjaG9vbCBzdHVkZW50cyB0aGF0IG1vdmVkIHRvIHRoZSBwcml2YXRlIHNjaG9vbCBoYXZlIHBvb3JlciBza2lsbHMgdGhhbiByZXF1aXJlZCwgdGhleSB3aWxsIGJpYXMgdGhlIG92ZXJhbGwgcGVyZm9ybWFuY2UgZG93bndhcmRzLgoKSWYgdGhlIHB1YmxpYyBzY2hvb2wgc3R1ZGVudHMgdGhhdCBtb3ZlZCB0byB0aGUgcHJpdmF0ZSBzY2hvb2wgaGF2ZSBiZXR0ZXIgc2tpbGxzIGFuZCBhdHRpdHVkZSB0aGFuIHJlc3Qgb2YgdGhlIHN0dWRlbnRzLCB0aG9zZSBzdHVkZW50cyBsZWZ0IGJlaGluZCBpbiB0aGVpciBwdWJsaWMgc2Nob29sIHdpbGwgaGF2ZSBhbiBldmVuIHdvcnNlIHBlcmZvcm1hbmNlLCBkdWUgdG8gdGhlIGxhY2sgb2YgaW50ZXJhY3Rpb24gd2l0aCBiZXR0ZXIgc2tpbGxlZCBwYWlycy4KCkl0IGlzIG5lY2Vzc2FyeSB0byBhY2NvdW50IGZvciBhbGwgdGhlIHBvc3NpYmxlIHNwaWxsb3ZlciBlZmZlY3RzIGluIG9yZGVyIHRvIGF2b2lkIGJpYXNlZCBjb25jbHVzaW9ucy4KCjwvZGl2PgoKCgpSZWZlcmVuY2VzOiAKCk11cmFsaWRoYXJhbiwgSy4sICYgU3VuZGFyYXJhbWFuLCBWLiAoMjAxMykuIENvbnRyYWN0IHRlYWNoZXJzOiBFeHBlcmltZW50YWwgZXZpZGVuY2UgZnJvbSBpbmRpYS4gV29ya2luZyBQYXBlciBOby4gMTk0NDAuIE5hdGlvbmFsIEJ1cmVhdSBvZiBFY29ub21pYyBSZXNlYXJjaC4KCk11cmFsaWRoYXJhbiwgSy4sICYgU3VuZGFyYXJhbWFuLCBWLiAoMjAxNSkuIFRoZSBBZ2dyZWdhdGUgRWZmZWN0IG9mIFNjaG9vbCBDaG9pY2U6IEV2aWRlbmNlIGZyb20gYSBUd28tU3RhZ2UgRXhwZXJpbWVudCBpbiBJbmRpYSAsIFRoZSBRdWFydGVybHkgSm91cm5hbCBvZiBFY29ub21pY3MsIFZvbHVtZSAxMzAsIElzc3VlIDMsIEF1Z3VzdCAyMDE1LCBQYWdlcyAxMDEx4oCTMTA2NgoKTXVyYWxpZGhhcmFuLCBLLiwgRGFzLCBKLiwgSG9sbGEsIEEuLCAmIE1vaHBhbCwgQS4gKDIwMTcpLiBUaGUgZmlzY2FsIGNvc3Qgb2Ygd2VhayBnb3Zlcm5hbmNlOiBFdmlkZW5jZSBmcm9tIHRlYWNoZXIgYWJzZW5jZSBpbiBpbmRpYS4gSm91cm5hbCBvZiBQdWJsaWMgRWNvbm9taWNzLCAxNDUsIDExNi0xMzUuCgoKCiMgUTYKCjxkaXYgY2xhc3M9Imp1bWJvdHJvbiI+CiAgIDxkaXYgaWQ9Imp1c3RpZmljYXIiPgogIDxwPiBBbnN3ZXIgdGhlIHF1ZXN0aW9ucyBiZWxvdyBwZXJ0YWluaW5nIHRvIHN0YXRlIGNhcGFjaXR5OiA8L3A+CiAgPC9kaXY+CjwvZGl2PgoKIyMgYSkKCjxkaXYgY2xhc3M9Imp1bWJvdHJvbiI+CiAgIDxkaXYgaWQ9Imp1c3RpZmljYXIiPgogIDxwPiBCZXNsZXkgIGFuZCAgUGVyc3NvbiAgcmVmZXIgIHRvICB0aGUgIHR5cG9sb2d5ICBvZiAgc3RhdGVzICB0aGV5ICBhcnJpdmUgIGF0ICBhcyAgdGhlICBBbm5hIEthcmVuaW5hIE1hdHJpeCBiYXNlZCBvbiB0aGUgc2ltaWxhcml0eSBiZXR3ZWVuIHRoZSBvcGVuaW5nIHBocmFzZSBvZiBUb2xzdG954oCZcyB3b3JrIOKAnEFsbCBoYXBweSBmYW1pbGllcyByZXNlbWJsZSBlYWNoIG90aGVyOyBlYWNoIHVuaGFwcHkgZmFtaWx5IGlzIHVuaGFwcHkgaW4gaXRzIG93biB3YXnigJ0gYW5kIHRoZWlyIGNhdGVnb3JpemF0aW9uLiAgRXhwbGFpbiB3aHkuICAoMiBwb2ludHMpIDwvcD4KICA8L2Rpdj4KPC9kaXY+Cgo8ZGl2IGlkID0gInJlc3B1ZXN0YSI+CgpUaGUgYW5hbG9neSBpcyBtYWRlIGJlY2F1c2UgZGV2ZWxvcGVkIHN0YXRlcywgdGhhdCBpbiB0aGlzIHNjZW5hcmlvIHJlcHJlc2VudCB0aGUgaGFwcHkgZmFtaWxpZXMsIGFyZSBzaW1pbGFyIGluIHRoZSBhYnNlbmNlIG9mIHZpb2xlbmNlLCB3ZWxmYXJlIGFuZCB0aGUgcHJvdmlzaW9uIG9mIGdvb2RzIGFuZCBzZXJ2aWNlcy4gV2hpbGUgdGhlIGRldmVsb3Bpbmcgc3RhdGVzLCByZXByZXNlbnRpbmcgdGhlIHVuaGFwcHkgZmFtaWxpZXMgaW4gdGhpcyBzY2VuYXJpbywgYXJlIGhldGVyb2dlbmVvdXMgaW4gbmF0dXJlLCB3aGljaCBnaXZlcyB2aW9sZW5jZSBjb25kaXRpb25zIGFuZCBhIGRpdmVyc2l0eSBpbiBzdGF0ZSBjYXBhYmlsaXRpZXMuCgpUaGlzIHNpbWlsaXR1ZGVzIGFuZCBkaWZmZXJlbmNlcyBhcmUgcmVmbGVjdGVkIGluIHRoZSBjYXRlZ29yaXphdGlvbiBieSB1c2luZyB0aGUgQW5uYSBLYXJlbmluYSBNYXRyaXgsIGJhc2VkIG9uIHRoZSBjbGFzc2lmaWNhdGlvbiBieSB0aGUgc3RhdGUgKGNvbW1vbi1pbnRlcmVzdCwgc3BlY2lhbC1pbnRlcmVzdCBhbmQgd2VhayBzdGF0ZXMpIGFuZCBwb2xpdGljYWwgdmlvbGVuY2UgKHBlYWNlLCByZXByZXNzaW9uLCBhbmQgY2l2aWwgd2FyKS4gIAoKPC9kaXY+CgojIyBiKQoKPGRpdiBjbGFzcz0ianVtYm90cm9uIj4KICAgPGRpdiBpZD0ianVzdGlmaWNhciI+CiAgPHA+IEluIHRoZSB3b3JrIG9mIFRpbGx5IGluIENvZXJjaW9uLCBDYXBpdGFsLCBhbmQgRXVyb3BlYW4gU3RhdGVzICgxOTkwKSwgYXMgd2VsbCBhcyBIZXJic3QgKDIwMDIpLCB0aGUgcm9sZSBvZiB0aGUgaW50ZXJuYXRpb25hbCBzdGF0ZSBzeXN0ZW0gb3IgdGhlIGludGVyYWN0aW9uIGJldHdlZW5zdGF0ZXMgb24gdGhlIHdvcmxkIHN0YWdlIGlzIGdpdmVuIGEgY2VudHJhbCByb2xlIGFzIHJlZ2FyZHMgdG8gaW1wbGljYXRpb25zIGZvciBzdGF0ZWNhcGFjaXR5LiAgRGlkIHRoZSBpbnRlcm5hdGlvbmFsIHN5c3RlbSBoYXZlIHRoZSBzYW1lIG9yIGRpZmZlcmluZyBlZmZlY3RzIGluIHRoZXR3byBjb250ZXh0cz8gIEV4cGxhaW4uICAoMiBwb2ludHMpIDwvcD4KICA8L2Rpdj4KPC9kaXY+Cgo8ZGl2IGlkID0gInJlc3B1ZXN0YSI+Cgo8L2Rpdj4KCiMjIGMpCgo8ZGl2IGNsYXNzPSJqdW1ib3Ryb24iPgogICA8ZGl2IGlkPSJqdXN0aWZpY2FyIj4KICA8cD4gV2hhdCBpcyB0aGUgcm9sZSBvZiBpbnRlcm5hdGlvbmFsIHN5c3RlbSB0b2RheT8gIERvZXMgc3VjY2VzcyBvZiB0aGUgY2hvc2VuIGZvcm0gb2YgcG9saXRpY2FsIGluc3RpdHV0aW9ucyAtIGNhcGl0YWxpc3QgbGliZXJhbCBkZW1vY3JhY3ksIGNvbW11bmFsaXNtLCBzb2NpYWxpc3Qgc3RhdGUtIGRlcGVuZCBvbiBpdHMgZml0IHdpdGggdGhlIGV4aXN0aW5nIGNob2ljZXM/ICBFeHBsYWluLiAgKDIgcG9pbnRzKSA8L3A+CiAgPC9kaXY+CjwvZGl2PgoKCmBgYHtyLCBldmFsID0gRkFMU0UsIGVjaG8gPSBGQUxTRX0KCiMgMmEgaHR0cHM6Ly9zY2ktaHViLnNlL2h0dHBzOi8vd3d3LmpzdG9yLm9yZy9zdGFibGUvMjc1MDM2ODcKCgpgYGAKCgojIEFwcGVuZGl4IFExCgoKYGBge3J9CmxpYnJhcnkodGlkeXZlcnNlKQpsaWJyYXJ5KGhhdmVuKSAjIGltcG9ydGEsIGVudHJlIG90cm9zIHNvZnR3YXJlLCBkZSBTdGF0YQpsaWJyYXJ5KGhpZ2hjaGFydGVyKSAjZ3LDoWZpY2FzIGludGVyYWN0aXZhcwpsaWJyYXJ5KHNqbGFiZWxsZWQpICMgbWFuZWphciBsYWJlbHMgZGUgbGFzIHZhcmlhYmxlcyAKCmBgYAoKCmBgYHtyfQpkYXRhIDwtIHJlYWRfZHRhKAogICAgICAgICAgICAgICAgICAgICBmaWxlID0gIkRhdG9zL05HSVI2QUZMLkRUQSIsCiAgICAgICAgICAgICAgICAgICAgIGVuY29kaW5nID0gTlVMTAogICAgICAgICAgICAgICAgICAgICApCmBgYAoKYGBge3J9CmhlYWQoZGF0YSkKYGBgCmBgYHtyfQpldGlxdWV0YXM8LWdldF9sYWJlbChkYXRhKQpldGlxdWV0YXNfdW5pY2FzPC11bmlxdWUoZXRpcXVldGFzKQpudW1fZmlsYXM8LW5yb3coZGF0YSkKYGBgCgpgYGB7cn0KdmFyaWFibGVzPC1jb2xuYW1lcyhkYXRhKQp2YXJpYWJsZXM8LXNvcnQodmFyaWFibGVzKQpgYGAKCgpgYGB7cn0KbXlNZW51SXRlbXMgPC0gYygiZG93bmxvYWRQTkciLCAiZG93bmxvYWRKUEVHIiwgImRvd25sb2FkUERGIiwgJ2Rvd25sb2FkU1ZHJywgJ3ByaW50Q2hhcnQnKQoKZGF0YSAlPiUKICBjb3VudCh2MDEyKSU+JSAKICBoY2hhcnQoJ2NvbHVtbicsCiAgICAgICAgIGhjYWVzKCB5ID0gJ24nKSklPiUKICBoY19hZGRfdGhlbWUoaGNfdGhlbWVfZWNvbm9taXN0KCkpJT4lCiAgaGNfdGl0bGUoCiAgICB0ZXh0ID0gZ2V0X2xhYmVsKGRhdGEkdjAxMikKICApICU+JQogIGhjX3N1YnRpdGxlKHRleHQgPSAiaW50ZXJhY3RpdmUgZ3JhcGhpY3MiKSAlPiUKICAjIGhjX2NyZWRpdHMoCiAgIyAgZW5hYmxlZCA9IFRSVUUsIHRleHQgPSAiU291cmNlOiBTU1MiLAogICMgIHN0eWxlID0gbGlzdChmb250U2l6ZSA9ICIxMnB4IikpJT4lCiAgaGNfeUF4aXModGl0bGUgPSBsaXN0KHRleHQgPSAiV29tZW4iKSklPiUKICBoY194QXhpcyh0aXRsZT1saXN0KHRleHQ9IkFnZSIpLAogICAgICAgICAgIGNhdGVnb3JpZXMgPSBhcy5jaGFyYWN0ZXIoc29ydCh1bmlxdWUoZGF0YSR2MDEyKSkpKSAlPiUKICAgIGhjX2V4cG9ydGluZyhlbmFibGVkID0gVFJVRSwKICAgICAgICAgICAgICAgZmlsZW5hbWUgPSAiZGF0b3MiLAogICAgICAgICAgICAgICBidXR0b25zID0gbGlzdChjb250ZXh0QnV0dG9uID0gbGlzdChtZW51SXRlbXMgPSBteU1lbnVJdGVtcykpKQpgYGAKCgpgYGB7cn0KZGF0YSAlPiUKICBjb3VudCh2MTMxKSU+JSAKICBoY2hhcnQoJ2NvbHVtbicsCiAgICAgICAgIGhjYWVzKCB5ID0gJ24nKSklPiUKICBoY19hZGRfdGhlbWUoaGNfdGhlbWVfZWNvbm9taXN0KCkpJT4lCiAgaGNfdGl0bGUoCiAgICB0ZXh0ID0gZ2V0X2xhYmVsKGRhdGEkdjEzMSkKICApICU+JQogIGhjX3N1YnRpdGxlKHRleHQgPSAiaW50ZXJhY3RpdmUgZ3JhcGhpY3MiKSAlPiUKICAjIGhjX2NyZWRpdHMoCiAgIyAgZW5hYmxlZCA9IFRSVUUsIHRleHQgPSAiU291cmNlOiBTU1MiLAogICMgIHN0eWxlID0gbGlzdChmb250U2l6ZSA9ICIxMnB4IikpJT4lCiAgaGNfeUF4aXModGl0bGUgPSBsaXN0KHRleHQgPSAiTnVtYmVyIikpJT4lCiAgaGNfeEF4aXModGl0bGU9bGlzdCh0ZXh0PSJFdGhuaWNpdHkiKSwKICAgICAgICAgICBjYXRlZ29yaWVzID0gZ2V0X2xhYmVscyhkYXRhJHYxMzEpKSAlPiUKICAgIGhjX2V4cG9ydGluZyhlbmFibGVkID0gVFJVRSwKICAgICAgICAgICAgICAgZmlsZW5hbWUgPSAiZGF0b3MiLAogICAgICAgICAgICAgICBidXR0b25zID0gbGlzdChjb250ZXh0QnV0dG9uID0gbGlzdChtZW51SXRlbXMgPSBteU1lbnVJdGVtcykpKQpgYGAKCgoKYGBge3J9CmRhdGEgJT4lCiAgY291bnQodjEwMSklPiUgCiAgaGNoYXJ0KCdjb2x1bW4nLAogICAgICAgICBoY2FlcyggeSA9ICduJykpJT4lCiAgaGNfYWRkX3RoZW1lKGhjX3RoZW1lX2Vjb25vbWlzdCgpKSU+JQogIGhjX3RpdGxlKAogICAgdGV4dCA9IGdldF9sYWJlbChkYXRhJHYxMDEpCiAgKSAlPiUKICBoY19zdWJ0aXRsZSh0ZXh0ID0gImludGVyYWN0aXZlIGdyYXBoaWNzIikgJT4lCiAgIyBoY19jcmVkaXRzKAogICMgIGVuYWJsZWQgPSBUUlVFLCB0ZXh0ID0gIlNvdXJjZTogU1NTIiwKICAjICBzdHlsZSA9IGxpc3QoZm9udFNpemUgPSAiMTJweCIpKSU+JQogIGhjX3lBeGlzKHRpdGxlID0gbGlzdCh0ZXh0ID0gIk51bWJlciIpKSU+JQogIGhjX3hBeGlzKHRpdGxlPWxpc3QodGV4dD0iUmVnaW9uIiksCiAgICAgICAgICAgY2F0ZWdvcmllcyA9IGdldF9sYWJlbHMoZGF0YSR2MTAxKSkgJT4lCiAgICBoY19leHBvcnRpbmcoZW5hYmxlZCA9IFRSVUUsCiAgICAgICAgICAgICAgIGZpbGVuYW1lID0gImRhdG9zIiwKICAgICAgICAgICAgICAgYnV0dG9ucyA9IGxpc3QoY29udGV4dEJ1dHRvbiA9IGxpc3QobWVudUl0ZW1zID0gbXlNZW51SXRlbXMpKSkKYGBgCgoKYGBge3J9CmRhdGEgJT4lCiAgY291bnQodjE0OSklPiUgCiAgaGNoYXJ0KCdjb2x1bW4nLAogICAgICAgICBoY2FlcyggeSA9ICduJykpJT4lCiAgaGNfYWRkX3RoZW1lKGhjX3RoZW1lX2Vjb25vbWlzdCgpKSU+JQogIGhjX3RpdGxlKAogICAgdGV4dCA9IGdldF9sYWJlbChkYXRhJHYxNDkpCiAgKSAlPiUKICBoY19zdWJ0aXRsZSh0ZXh0ID0gImludGVyYWN0aXZlIGdyYXBoaWNzIikgJT4lCiAgIyBoY19jcmVkaXRzKAogICMgIGVuYWJsZWQgPSBUUlVFLCB0ZXh0ID0gIlNvdXJjZTogU1NTIiwKICAjICBzdHlsZSA9IGxpc3QoZm9udFNpemUgPSAiMTJweCIpKSU+JQogIGhjX3lBeGlzKHRpdGxlID0gbGlzdCh0ZXh0ID0gIk51bWJlciIpKSU+JQogIGhjX3hBeGlzKHRpdGxlPWxpc3QodGV4dD0iQ2F0ZWdvcnkgb2YgZWR1Y2F0aW9uYWwgYXR0YWlubWVudCIpLAogICAgICAgICAgIGNhdGVnb3JpZXMgPSBnZXRfbGFiZWxzKGRhdGEkdjE0OSkpICU+JQogICAgaGNfZXhwb3J0aW5nKGVuYWJsZWQgPSBUUlVFLAogICAgICAgICAgICAgICBmaWxlbmFtZSA9ICJkYXRvcyIsCiAgICAgICAgICAgICAgIGJ1dHRvbnMgPSBsaXN0KGNvbnRleHRCdXR0b24gPSBsaXN0KG1lbnVJdGVtcyA9IG15TWVudUl0ZW1zKSkpCmBgYAoKYGBge3J9CmRhdGEgJT4lCiAgY291bnQodjE0OSx2MTAxKSU+JQogIGdyb3VwX2J5KHYxMDEpJT4lCiAgaGNoYXJ0KCdjb2x1bW4nLAogICAgICAgICBoY2FlcyggeSA9ICduJyxncm91cCA9IGFzX2xhYmVsKHYxNDkpKSklPiUKICBoY19hZGRfdGhlbWUoaGNfdGhlbWVfZWNvbm9taXN0KCkpJT4lCiAgaGNfdGl0bGUoCiAgICB0ZXh0ID0gIkVkdWNhdGlvbmFsIGF0dGFpbm1lbnQgYnkgcmVnaW9uIgogICkgJT4lCiAgaGNfc3VidGl0bGUodGV4dCA9ICJpbnRlcmFjdGl2ZSBncmFwaGljcyIpICU+JQogICMgaGNfY3JlZGl0cygKICAjICBlbmFibGVkID0gVFJVRSwgdGV4dCA9ICJTb3VyY2U6IFNTUyIsCiAgIyAgc3R5bGUgPSBsaXN0KGZvbnRTaXplID0gIjEycHgiKSklPiUKICBoY195QXhpcyh0aXRsZSA9IGxpc3QodGV4dCA9ICJOdW1iZXIiKSklPiUKICBoY194QXhpcyh0aXRsZT1saXN0KHRleHQ9IkVkdWNhdGlvbmFsIEF0dGFpbm1lbnQgLyBSZWdpb24iKSwKICAgICAgICAgICBjYXRlZ29yaWVzID0gZ2V0X2xhYmVscyhkYXRhJHYxMDEpKSAlPiUKICAgIGhjX2V4cG9ydGluZyhlbmFibGVkID0gVFJVRSwKICAgICAgICAgICAgICAgZmlsZW5hbWUgPSAiZGF0b3MiLAogICAgICAgICAgICAgICBidXR0b25zID0gbGlzdChjb250ZXh0QnV0dG9uID0gbGlzdChtZW51SXRlbXMgPSBteU1lbnVJdGVtcykpKQpgYGAKCgpgYGB7cn0KZGF0YSAlPiUKIGZpbHRlcih2MTMzIT05OSklPiUKICBncm91cF9ieSh2MTAxLHYwMTIpJT4lCiAgc3VtbWFyaXNlKHByb19hZT1tZWFuKHYxMzMpKSU+JQogIGhjaGFydCgnbGluZScsCiAgICAgICAgIGhjYWVzKHg9djAxMiwgeSA9IHByb19hZSxncm91cCA9IGFzX2xhYmVsKHYxMDEpKSklPiUKICBoY19hZGRfdGhlbWUoaGNfdGhlbWVfZWNvbm9taXN0KCkpJT4lCiAgaGNfdGl0bGUoCiAgICB0ZXh0ID0gIk1lYW4gZWR1Y2F0aW9uIHllYXJzIGJ5IGFnZSAvIFJlZ2lvbiIKICApICU+JQogIGhjX3N1YnRpdGxlKHRleHQgPSAiaW50ZXJhY3RpdmUgZ3JhcGhpY3MiKSAlPiUKICAjIGhjX2NyZWRpdHMoCiAgIyAgZW5hYmxlZCA9IFRSVUUsIHRleHQgPSAiU291cmNlOiBTU1MiLAogICMgIHN0eWxlID0gbGlzdChmb250U2l6ZSA9ICIxMnB4IikpJT4lCiAgaGNfeUF4aXModGl0bGUgPSBsaXN0KHRleHQgPSAiTWVhbiAgZWR1Y2F0aW9uIHllYXJzIikpJT4lCiAgaGNfeEF4aXModGl0bGU9bGlzdCh0ZXh0PSJBZ2UiKSklPiUKICAgICAgICAgICNjYXRlZ29yaWVzID0gYXMuY2hhcmFjdGVyKHNvcnQodW5pcXVlKGRhdGEkdjAxMikpKSklPiUKICAgICAgICAgIAogICAgaGNfZXhwb3J0aW5nKGVuYWJsZWQgPSBUUlVFLAogICAgICAgICAgICAgICBmaWxlbmFtZSA9ICJkYXRvcyIsCiAgICAgICAgICAgICAgIGJ1dHRvbnMgPSBsaXN0KGNvbnRleHRCdXR0b24gPSBsaXN0KG1lbnVJdGVtcyA9IG15TWVudUl0ZW1zKSkpCmBgYAoKYGBge3IsIGVjaG89RkFMU0UsIG91dC53aWR0aD0iMTAwJSJ9CmtuaXRyOjppbmNsdWRlX2dyYXBoaWNzKCJodHRwczovL3VwbG9hZC53aWtpbWVkaWEub3JnL3dpa2lwZWRpYS9jb21tb25zL3RodW1iLzAvMDQvR2VvcG9saXRpY2FsX1pvbmVzX29mX05pZ2VyaWEuc3ZnLzEwMjRweC1HZW9wb2xpdGljYWxfWm9uZXNfb2ZfTmlnZXJpYS5zdmcucG5nIikKYGBgCgoKYGBge3J9CmRhdGEgJT4lCiBmaWx0ZXIodjEzMyE9OTkpJT4lCiAgbXV0YXRlKGdydXBvcz1pZmVsc2UodjEwMT09MywnVHJlYXRtZW50JywnQ29udHJvbCcpKSU+JQogIGdyb3VwX2J5KGdydXBvcyx2MDEyKSU+JQogIHN1bW1hcmlzZShwcm9fYWU9bWVhbih2MTMzKSklPiUKICBoY2hhcnQoJ2xpbmUnLAogICAgICAgICBoY2Flcyh4PXYwMTIsIHkgPSBwcm9fYWUsIGdyb3VwID0gZ3J1cG9zKSklPiUKICBoY19hZGRfdGhlbWUoaGNfdGhlbWVfZWNvbm9taXN0KCkpJT4lCiAgaGNfdGl0bGUoCiAgICB0ZXh0ID0gIk1lYW4gZWR1Y2F0aW9uIHllYXJzIGJ5IGFnZSAvIFRyZWF0bWVudC1Db250cm9sIgogICkgJT4lCiAgaGNfc3VidGl0bGUodGV4dCA9ICJpbnRlcmFjdGl2ZSBncmFwaGljcyIpICU+JQogICMgaGNfY3JlZGl0cygKICAjICBlbmFibGVkID0gVFJVRSwgdGV4dCA9ICJTb3VyY2U6IFNTUyIsCiAgIyAgc3R5bGUgPSBsaXN0KGZvbnRTaXplID0gIjEycHgiKSklPiUKICBoY195QXhpcyh0aXRsZSA9IGxpc3QodGV4dCA9ICJNZWFuICBlZHVjYXRpb24geWVhcnMiKSklPiUKICBoY194QXhpcyhwbG90TGluZXMgPSBsaXN0KGxpc3QodmFsdWU9MjgsY29sb3I9InJlZCIsd2lkdGg9MiApKSklPiUKICBoY194QXhpcyh0aXRsZT1saXN0KHRleHQ9IkFnZSIpKSU+JQogICAgICAgICAgI2NhdGVnb3JpZXMgPSBhcy5jaGFyYWN0ZXIoc29ydCh1bmlxdWUoZGF0YSR2MDEyKSkpKSU+JQogICAgICAgICAgCiAgICBoY19leHBvcnRpbmcoZW5hYmxlZCA9IFRSVUUsCiAgICAgICAgICAgICAgIGZpbGVuYW1lID0gImRhdG9zIiwKICAgICAgICAgICAgICAgYnV0dG9ucyA9IGxpc3QoY29udGV4dEJ1dHRvbiA9IGxpc3QobWVudUl0ZW1zID0gbXlNZW51SXRlbXMpKSkKYGBgCgoK</div>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeSourceEmbed("finalexam.Rmd");
+  window.initializeCodeFolding("show" === "show");
+});
+</script>
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
